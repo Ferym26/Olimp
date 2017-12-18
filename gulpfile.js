@@ -167,7 +167,7 @@ gulp.task('watch', function () {
 gulp.task('sprite:png', function (cb) {
 
 	var spriteData =
-		gulp.src('core/sprites/*.{png,jpg}')
+		gulp.src('core/sprites/png/*.{png,jpg}')
 			.pipe(spritesmith({
 				imgName: 'sprite.png',
 				cssName: '_sprite.css',
@@ -178,9 +178,9 @@ gulp.task('sprite:png', function (cb) {
 		
 
 	spriteData.img.pipe(gulp.dest('app/img/'));
-	spriteData.css.pipe(gulp.dest('core/sprites/'))
+	spriteData.css.pipe(gulp.dest('core/sprites/png/'))
 					.pipe(rename({ extname: ".scss" }))
-					.pipe(gulp.dest('core/sprites/'));
+					.pipe(gulp.dest('core/sprites/png/'));
 
 	cb();
 
