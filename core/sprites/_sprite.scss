@@ -1,0 +1,168 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ellipse-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -219px;
+  width: 224px;
+  height: 197px;
+}
+.icon-ellipse-2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 239px;
+  height: 209px;
+}
+.icon-ellipse-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -249px 0px;
+  width: 218px;
+  height: 208px;
+}
+.icon-land-num-0 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px -55px;
+  width: 47px;
+  height: 46px;
+}
+.icon-land-num-1-big {
+  background-image: url(../img/sprite.png);
+  background-position: -102px -426px;
+  width: 90px;
+  height: 87px;
+}
+.icon-land-num-2-big {
+  background-image: url(../img/sprite.png);
+  background-position: -477px 0px;
+  width: 88px;
+  height: 91px;
+}
+.icon-land-num-3-big {
+  background-image: url(../img/sprite.png);
+  background-position: -234px -219px;
+  width: 95px;
+  height: 92px;
+}
+.icon-land-num-4-big {
+  background-image: url(../img/sprite.png);
+  background-position: -477px -198px;
+  width: 78px;
+  height: 85px;
+}
+.icon-land-num-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px -311px;
+  width: 28px;
+  height: 30px;
+}
+.icon-land-num-5-big {
+  background-image: url(../img/sprite.png);
+  background-position: -339px -219px;
+  width: 97px;
+  height: 88px;
+}
+.icon-land-num-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px 0px;
+  width: 49px;
+  height: 45px;
+}
+.icon-land-num-6-big {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -426px;
+  width: 92px;
+  height: 87px;
+}
+.icon-land-num-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px -111px;
+  width: 47px;
+  height: 44px;
+}
+.icon-land-num-7-big {
+  background-image: url(../img/sprite.png);
+  background-position: -234px -321px;
+  width: 95px;
+  height: 86px;
+}
+.icon-land-num-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px -165px;
+  width: 48px;
+  height: 43px;
+}
+.icon-land-num-8-big {
+  background-image: url(../img/sprite.png);
+  background-position: -477px -101px;
+  width: 88px;
+  height: 87px;
+}
+.icon-land-num-8 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px -218px;
+  width: 44px;
+  height: 43px;
+}
+.icon-land-num-9 {
+  background-image: url(../img/sprite.png);
+  background-position: -575px -271px;
+  width: 32px;
+  height: 30px;
+}
+.icon-land-num-eq-big {
+  background-image: url(../img/sprite.png);
+  background-position: -477px -293px;
+  width: 76px;
+  height: 76px;
+}
+.icon-land-tile-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -339px -321px;
+  width: 78px;
+  height: 72px;
+}
+.icon-land-tile-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -516px -426px;
+  width: 49px;
+  height: 72px;
+}
+.icon-land-tile-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -202px -426px;
+  width: 72px;
+  height: 72px;
+}
+.icon-land-tile-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -366px -426px;
+  width: 72px;
+  height: 72px;
+}
+.icon-land-tile-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -284px -426px;
+  width: 72px;
+  height: 72px;
+}
+.icon-land-tile-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -448px -426px;
+  width: 58px;
+  height: 72px;
+}

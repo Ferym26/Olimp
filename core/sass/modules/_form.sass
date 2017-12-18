@@ -1,0 +1,297 @@
+/*==================   FORMS   ==================*/
+
+$ph-color:	#000
+
+*::-webkit-input-placeholder
+	color: $ph-color
+	opacity: 1
+
+*:-moz-placeholder
+	color: $ph-color
+	opacity: 1
+
+*::-moz-placeholder
+	color: $ph-color
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $ph-color
+	opacity: 1
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: $ph-color
+body input:required:valid,
+body textarea:required:valid
+	color: $ph-color
+
+
+
+input,
+button,
+button:active,
+button:focus
+	border: none
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
+
+
+
+.form
+	
+	.label
+		display: block
+		margin: 0 0 5px
+		font-size: 0.8125rem //13px
+		color: #919799
+		font-weight: 700
+		
+	.input,
+	.select
+		display: block	
+		width: 100%
+		border: 1px solid #c6cacc
+		border-radius: 3px
+		background-color: #ffffff
+
+		font-family: $ff-main		
+		color: #000
+
+
+		//SIZE
+		&.input--xl
+			height: 48px
+			padding: 0 24px
+			font-size: 1rem //16px
+			// border-width: 2px
+			// &:hover,
+			&:focus
+				border-color: #000
+			&.input--is-error,
+			&.input--is-ok
+				// border-width: 2px
+
+		&.input--lg
+			height: 48px
+			padding: 0 20px
+			font-size: 0.8125rem //13px
+			// &:hover,
+			&:focus
+				border: 1px solid #000
+		
+		&.input--md
+			height: 36px
+			padding: 0 18px
+			font-size: 0.8125rem //13px
+			// &:hover,
+			&:focus
+				border: 1px solid #000
+
+		
+
+		//COLOR
+		&.input--is-error
+			border: 1px solid #f26d6d
+
+		&.input--is-ok
+			border: 1px solid #3eb39f
+
+
+
+
+
+		&.input--nums
+			text-align: center
+			font-size: 1.5rem //24px
+			font-weight: 700
+
+
+
+		//Wrapper for icons in input
+		&-wrap
+			position: relative
+
+	.validation-error
+		position: absolute
+		top: -20px
+		right: 0
+		font-size: 0.6875rem //11px
+		color: #f26d6d
+
+
+
+	
+	.select-box
+		position: relative
+
+		.select-wrap		
+			position: relative
+
+			&:after //arrow
+				+pseudo
+				+size(13px, 6px)
+				+hcenter
+				right: 20px
+				background: #fff url(../img/select-arrow.svg) no-repeat 50% 50%
+				z-index: 10
+
+			&:before //shadow text left
+				+pseudo
+				+size(100px, calc(100% - 2px))
+				+hcenter
+				right: 1px
+				border-radius: 3px
+				background: linear-gradient(to right, $trp 0%, #fff 50%)
+				z-index: 5
+
+
+		.select
+			background-size: 13px 6px
+			
+			appearance: none
+			&::-ms-expand
+				display: none
+
+
+		.droplist
+			position: absolute
+			width: 100%
+			left: 0
+			padding: 20px 0
+			border-radius: 3px
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.15)
+			background-color: #ffffff
+			cursor: pointer
+			font-size: 0.8125rem //13px
+			z-index: 300
+
+			&__item				
+				padding: 8px 130px 8px 23px
+
+				&:hover
+					font-weight: 700
+					background-color: #f2f8fa
+
+			&--up
+				bottom: 100%
+
+			&--down
+				top: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//ICONS
+
+	.eye-icon
+		+pseudo
+		+size(23px, 12px)
+		+hcenter
+		right: 15px
+		fill: $color-icon-fill
+		cursor: pointer
+		transition: fill 0.2s ease-in
+		z-index: 205
+
+		&:hover
+			fill: #0cb9f2
+
+
+
+
+
+
+
+
+	.field-arrow
+		position: absolute
+		+size(40px, 100%)
+		top: 0
+		cursor: pointer
+
+		&--left
+			left: 0
+
+		&--right
+			right: 0
+
+		&:hover
+			.num-arrow-icon
+				fill: #0cb9f2
+
+
+
+		.num-arrow-icon
+			position: absolute		
+			+size(5px, 12px)
+			+hcenter		
+			fill: $color-icon-fill
+			
+			transition: fill 0.2s ease-in
+			z-index: 205
+
+			&--left
+				left: 15px
+
+			&--right
+				right: 15px
+				transform: rotate(180deg)
+				transform-origin: 50% 28% //потому что svg трансформится иначе
+
+
+
+
+
+
+
+	.question-icon-wrap
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		font-size: 0
+		line-height: 0
+
+		&:hover
+			.hint
+				top: -15px
+				opacity: 1
+				visibility: visible
+
+		.question-icon			
+			+size(18px, 18px)
+			fill: #3eb39f
+			cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+/*==================   /FORMS   ==================*/

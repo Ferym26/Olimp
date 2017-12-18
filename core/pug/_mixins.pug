@@ -1,0 +1,53 @@
+//- svg
+mixin svg(imgName,className)
+	-var defaultClassName = ""
+	-if(className === undefined)
+		- className = defaultClassName
+	svg(class=className)
+		use(xlink:href="./img/sprite.svg#" + imgName)
+
+
+//- sandwich
+mixin sandwich(lineCount,noJS)
+	- var lineCount = lineCount || 3;
+	if !noJS
+		.sandwich
+			while lineCount > 0
+				- lineCount--
+				.sandwich__line
+	else
+		label.sandwich
+			input(type='checkbox').sandwich__input
+			while lineCount > 0
+				- lineCount--
+				.sandwich__line
+
+//- angle
+mixin span-angle(side)
+	-var points
+	-if(side == 'right')
+			- points = '0,0  10,0  100,50  10,100 0,100 '
+	-if(side == 'left')
+			- points = '90,0 100,0  100,100 90,100  0,50'
+	-if(side == 'top')
+			- points = '50,0  100,100 0,100'
+	-if(side == 'bottom')
+			- points = '0,0 100,0 50,100'
+	span.angle(class='angle__' + side)
+		svg(version='1.1', xml:space='preserve', viewbox='0 0 100 100', preserveaspectratio='none')
+			polygon(points=points)
+
+
+
+mixin butn-a(text)
+	.butn-field
+		.butn-size
+			a.butn(href="" target="_blank" rel="noopener noreferrer")= text
+
+
+mixin butn-b(position, text, newclass)
+	.butn-field(class="butn--" + position)
+		.butn-size
+			button.butn(class=newclass)
+				span.butn__text= text 
+

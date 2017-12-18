@@ -1,0 +1,873 @@
+/*=============== BLOCK-0 ===============*/
+
+.block-0
+	padding: 0 0 240px
+	background-color: $color-land-bg
+
+	.main-header
+
+		&__inner
+			display: flex
+			height: 70px
+			justify-content: space-between
+			align-items: center
+			max-width: 1465px
+			margin: 0 auto
+
+
+		&__left
+
+		&__right
+
+			.user
+				position: relative
+				cursor: pointer
+				z-index: 20
+
+				&:hover
+					.user__menu
+						bottom: -204px
+						opacity: 1
+						visibility: visible
+					.user__name-text
+						border-bottom: 1px solid rgba(#fff, 0.25)
+
+				&__name
+					display: inline-block					
+
+					&-text
+						color: #fff
+						font-weight: 700
+
+				&__ava
+					display: inline-block
+					max-width: 44px
+					margin-left: 12px
+					cursor: pointer
+					&-img
+						+circle
+
+				&__menu
+					position: absolute
+					bottom: -250px
+					right: 0
+					padding: 10px 0
+					border-radius: 3px
+					background-color: #f2f8fa
+					z-index: 50
+					opacity: 0
+					visibility: hidden
+					transition: all 0.25s ease-in-out
+
+					&:after //arrow
+						+pseudo
+						+arr(12, 6, #f2f8fa, t)
+						top: -6px
+						right: 16px
+
+					&:before //bug fix
+						+pseudo
+						+size(100%, 30px)
+						top: -30px
+						left: 0
+						z-index: -5
+
+					&-item
+						position: relative
+						display: block
+						min-width: 225px
+						padding: 8.5px 50px 8.5px 23px
+
+						font-size: 0.8125rem //13px
+						color: #000
+
+						&:hover
+							text-decoration: none
+							background-color: #e6eff2
+							color: #000
+							font-weight: 700
+
+						&:not(:last-child)
+							margin: 0 0 10px
+
+						&.is-active
+							background-color: #e6eff2
+							color: #000
+							font-weight: 700
+
+						.menu-icon
+							position: absolute
+							+size(24px, 24px)
+							+hcenter
+							right: 23px
+							fill: $color-icon-fill
+
+
+		.logo
+			display: inline-block
+
+		&__menu
+			display: inline-block
+			margin-left: 45px
+
+			&-item
+				
+				transition: color 0.3s ease
+				background-color: $trp
+				cursor: pointer
+				padding: 0 0 3px
+				line-height: 1
+				color: #fefefe
+
+				&:hover					
+					border-bottom: 1px solid rgba(#fff, 0.25)
+				
+				&:not(:last-child)
+					margin-right: 46px
+
+				&:disabled
+					color: rgba(#fefefe, 0.35)
+					cursor: default
+					&:hover
+						border: none						
+
+		
+
+
+
+	.title-field
+		padding: 0 0 55px
+		color: #fefefe
+
+		&__inner
+			position: relative
+			max-width: 1215px
+			margin: 0 auto
+			z-index: 10
+
+
+
+
+		
+		.main-title
+			margin: 24px 0 0
+
+			&__inner
+
+			&__text
+				margin: 14px 0 0 -35px
+				font-weight: 700
+
+			&__text-2
+				max-width: 390px
+				font-weight: 400
+
+			&__text-3
+				font-weight: 700
+				color: $color-green
+
+			&__text-4
+				margin: 12px 0 0
+
+
+
+
+		.info-title
+			display: flex
+			margin: 30px 0 36px
+
+			&__item
+
+				&-date
+					width: 370px
+					padding-right: 20px
+
+				&-price
+					
+
+				&-icon
+					.info-icon
+						+size(48px, 48px)
+						fill: rgba(#fff, 0.5)
+
+			&__text
+				margin: 17px 0 0
+
+				.text-1
+
+				.text-2
+					font-size: 1.25rem //20px
+					line-height: 1
+					font-weight: 700
+
+
+		.advantages
+			position: relative
+
+			&__item
+				position: absolute
+				max-width: 100px
+				text-align: center
+				font-weight: 700
+				z-index: 5
+
+				&:after //bg bubble
+					+pseudo
+					+center					
+					z-index: -5
+
+				&:before // number
+					+pseudo
+					z-index: -4
+
+				&--1
+					top: 59px
+					left: 59px
+
+					&:after
+						@extend .icon-ellipse-1
+					&:before
+						top: -41px
+						left: -63px
+						@extend .icon-land-num-1-big
+
+						
+
+				&--2
+					top: 182px
+					right: 32px
+
+					&:after
+						@extend .icon-ellipse-2
+					&:before
+						top: -58px
+						left: -50px
+						@extend .icon-land-num-2-big
+
+				&--3
+					top: 462px
+					left: 141px
+
+					&:after
+						@extend .icon-ellipse-3
+					&:before
+						bottom: -60px
+						right: -55px
+						@extend .icon-land-num-3-big
+
+		.superhero-1
+			position: absolute
+			max-width: 287px
+			top: 56px
+			right: 164px
+			z-index: 100
+
+/*=============== END BLOCK-0 ===============*/
+
+
+
+
+
+/*=============== BLOCK-1 ===============*/
+
+.block-1
+	background-color: #fff
+
+	&__inner
+		padding: 44px 0 0
+		margin: -240px 0 0
+		border-radius: 3px
+		background-color: #f2f2f2
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15)
+
+	
+	.title
+
+		&__text
+			margin: 0 0 18px
+			font-weight: 700
+
+		&__descr
+
+			&:not(:last-child)
+				margin: 0 0 24px
+	
+
+	.tiles
+		margin: 47px 0 0
+
+		&__inner
+			display: flex
+			max-width: 800px
+			margin: 0 auto
+			flex-wrap: wrap
+			justify-content: center
+
+		.tile
+			position: relative
+			flex: 1 1 300px
+			max-width: 230px
+			margin: 0 15px 52px
+			padding: 102px 0 0
+			text-align: center
+
+			&:before //icon
+				+pseudo
+				top: 0
+				+wcenter
+
+			&__title
+				max-width: 185px
+				margin: 0 auto
+
+				&-text
+					font-weight: 700
+					line-height: 1
+
+			&__descr
+				margin: 5px 0 0
+
+				&-text
+
+	@for $i from 1 through 6
+		.tile--#{$i}
+			&:before
+				@extend .icon-land-tile-#{$i}
+
+/*=============== END BLOCK-1 ===============*/
+
+
+
+
+
+
+/*=============== BLOCK-2 ===============*/
+
+.block-2
+	padding: 57px 0 103px
+
+	.container
+		max-width: 1000px
+
+	.reward
+
+		&__inner
+			padding: 23px 0 0
+
+		&__title
+
+			&-text
+				line-height: 2.85rem
+
+		&__descr
+			margin: 8px 0 0
+
+			&-text
+				line-height: 1.5
+
+		&__list
+			margin: 24px 0 0
+			padding-left: 25px
+
+			&-item
+				&:not(:last-child)
+					margin: 0 0 17px
+
+			&-title
+				position: relative
+				font-weight: 400
+
+				&:after
+					+pseudo
+					+size(4px, 4px)
+					+circle
+					top: 9px
+					left: -25px
+					background-color: #000
+
+			&-descr
+				color: #999
+
+	.reward-gallery
+		position: relative
+
+		&__item
+			position: absolute
+			+size(477px, 336px)
+
+			&--1
+				top: 0
+				left: 0
+				z-index: 15
+
+			&--2
+				top: 70px
+				left: 235px
+				z-index: 10
+
+			&--3
+				top: 145px
+				left: 470px
+				z-index: 5
+
+		&__img
+	
+/*=============== END BLOCK-2 ===============*/
+
+
+
+
+
+/*=============== BLOCK-3 ===============*/
+.block-3
+	padding: 50px 0 92px
+	overflow: hidden
+
+	.container
+		max-width: 1000px
+
+	.gift
+
+		&__inner
+			padding: 23px 0 0
+
+		&__title
+
+			&-text
+
+		&__descr
+			margin: 3px 0 0
+
+			&-text
+
+		&__list
+			margin: 28px 0 0
+			padding-left: 25px
+
+			&-item
+				&:not(:last-child)
+					margin: 0 0 1rem
+
+			&-title
+				position: relative
+				font-weight: 400
+
+				&:after
+					+pseudo
+					+size(4px, 4px)
+					+circle
+					top: 9px
+					left: -25px
+					background-color: #000
+
+			&-descr
+				color: #999
+
+	.gift-gallery
+		position: relative
+
+		&__item
+			position: absolute
+			+size(477px, 336px)
+
+			&--1
+				top: 0
+				left: -475px
+				z-index: 5
+
+			&--2
+				top: 70px
+				left: -245px
+				z-index: 10
+
+			&--3
+				top: 145px
+				left: -20px
+				z-index: 15
+
+		&__img
+
+/*=============== END BLOCK-3 ===============*/
+
+
+
+
+
+
+
+/*=============== BLOCK-4 ===============*/
+.block-4
+	padding: 0 0 386px
+	background-color: $color-land-bg
+	overflow: hidden
+
+	&__inner
+		padding: 55px 0
+
+	.butn-wrap
+		text-align: center
+
+
+
+	.planets
+
+/*=============== END BLOCK-4 ===============*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== BLOCK-5 ===============*/
+.block-5
+
+	&__inner
+		position: relative
+		margin: -384px 0 0
+		padding: 47px 0
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15)
+		border-radius: 3px
+		background-color: #f2f2f2
+		z-index: 100
+
+	.superhero-2
+		position: absolute
+		width: 221px
+		top: -216px
+		right: 128px
+		z-index: 50
+
+	.title
+		&__inner
+			
+		&__text
+			max-width: 715px
+			margin: 0 auto
+			text-align: center
+		&__subtext
+			margin: 25px 0 0
+
+
+
+	.slider-box
+		position: relative
+		margin: 25px 0 0
+
+		.slider-navigation
+
+			&__arrows
+
+				.arrow
+					position: absolute
+					+hcenter
+					+size(24px, 17px)
+					fill: #999
+					transition: background-color 0.2s ease
+					cursor: pointer
+
+					&--left
+						left: -86px
+
+					&--right
+						right: -86px
+						transform: rotate(180deg)
+						transform-origin: 50% 25%
+
+					&:hover
+						fill: $color-green
+
+			&__dots
+				display: flex
+				justify-content: center
+				margin: 30px 0 0
+				
+				.dot
+					+size(12px, 12px)
+					+circle
+					margin: 0 6px
+					background-color: #999
+					transition: background-color 0.2s ease
+					cursor: pointer
+					
+					&.is-active
+						background-color: $color-green
+
+					&:hover
+						background-color: $color-green
+
+	.slider
+
+		.slide
+
+			&__inner
+				display: flex
+
+
+			&__question
+				width: 50%
+
+				&-pic
+					max-width: 470px
+					padding: 30px 20px 47px
+					border-radius: 3px
+					background-color: #fff
+					box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1)
+
+					text-align: center
+
+				&-img
+					display: inline-block
+					max-width: 100%
+
+			&__descr
+				width: 50%
+				padding-left: 15px
+
+				&-head
+
+				&-title
+
+				&-sec
+					margin: 28px 0 0
+
+				&-text
+
+
+	.num-big
+
+		&--1
+			top: -150px
+			right: -110px
+
+		&--5			
+			top: -232px
+			left: 283px
+
+		&--6
+			top: 46px
+			right: -20px
+
+		&--8
+			top: -20px
+			left: 124px
+
+		&--eq
+			top: 117px
+			left: -62px
+
+/*=============== END BLOCK-5 ===============*/
+
+
+
+
+
+
+
+/*=============== BLOCK-6 ===============*/
+.block-6
+	padding: 55px 0 0
+
+	.faq
+
+		&__inner
+			max-width: 815px
+			margin: 0 auto
+
+		&__title
+
+			&-text
+				text-align: center
+
+		&-block
+			margin: 0
+
+			&__item
+				padding: 25px 0
+				border-bottom: 1px solid #e6e6e6
+				cursor: pointer
+				transition: background-color 0.2s ease-in-out
+
+				&:hover
+					.title
+						color: #21bf13
+
+					.plus-minus
+						&:after
+							
+						&:before
+							
+							transform: rotate(-90deg)
+
+				&.is-active
+					.plus-minus
+						&:before
+							transform: rotate(-90deg)
+					
+					&:hover
+						.plus-minus						
+							&:before
+								transform: rotate(0deg)
+
+				&-title
+					position: relative
+					padding: 0 47px
+
+					.plus-minus
+						position: absolute
+						+size(24px, 24px)
+						top: 0
+						left: 0
+									
+
+						&:before //vertical stik
+							+pseudo
+							+size(2px, 100%)
+							top: 0
+							left: 11px
+							background-color: $color-green
+							transition: transform 0.3s ease
+
+						&:after //gorizontal stik
+							+pseudo
+							+size(100%, 2px)
+							+center
+							background-color: $color-green					
+
+						
+
+
+					.title
+
+				&-descr
+					margin: 17px 0 3px
+					padding: 0 50px
+
+					.text
+						&:not(:last-child)
+							margin: 0 0 20px
+
+					&.is-hidden
+						display: none
+
+/*=============== END BLOCK-6 ===============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== BLOCK-7 ===============*/
+.block-7
+	padding: 46px 0 21px
+
+	.docs
+
+		&__inner
+
+		&__title
+
+			&-text
+				text-align: center
+
+		&__block
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			margin: 25px 0 0
+
+		&__item
+			position: relative
+			flex: 1 1 470px
+			margin: 0 0 26px
+
+			&:hover
+				.docs__item-text
+					border: none
+
+			&-icon
+				position: absolute
+				+size(37px, 48px)
+				top: 0
+				left: 0
+
+				.docs-icon
+					fill: #ccc
+
+			&-title
+				padding: 0 20px 0 55px
+
+			&-text
+				color: #000
+				border-bottom: 1px solid #ccc
+
+			&-meta
+				padding-left: 55px
+				color: #999
+
+
+			&-type				
+				&:after
+					content: ', '
+
+			a
+				text-decoration: none
+
+/*=============== END BLOCK-7 ===============*/
+
+
+
+
+
+
+
+
+
+
+
+/*=============== FOOTER ===============*/
+.main-footer	
+	overflow: hidden
+	background-color: $color-land-bg
+
+	.container
+		max-width: 1000px
+
+	.butn-wrap
+		padding: 56px 0
+		text-align: center
+		border-bottom: 1px solid rgba(#fff, 0.15)
+
+	&__meta
+		padding: 25px 0
+
+		.meta-title
+
+			&__text
+				color: rgba(#fff, 0.75)
+
+		.meta-links
+
+			&__link
+				color: rgba(#fff, 0.5)
+				text-decoration: underline
+
+				&:hover
+					text-decoration: none
+
+				&:not(:last-child)
+					margin-right: 35px
+
+/*=============== END FOOTER ===============*/

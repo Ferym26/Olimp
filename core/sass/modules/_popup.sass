@@ -1,0 +1,456 @@
+//POP-UPs
+
+.overlay
+	display: none
+	position: fixed
+	+size(100%, 100%)
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: rgba(#212426, 0.75)
+	cursor: pointer
+	z-index: 100
+
+.popup
+	display: none
+	position: fixed
+	width: 350px
+	+center
+	
+	border-radius: 3px
+	background-color: #f2f8fa
+	z-index: 200
+
+	&__inner
+		padding: 25px
+
+	&__head
+		position: relative
+
+	&__close
+		position: absolute
+		+size(24px, 24px)
+		top: 0
+		right: 0
+		transform: rotate(45deg)
+		transition: transform 0.3s ease-in
+		cursor: pointer
+		z-index: 210
+
+		&:hover
+			transform: rotate(135deg)
+			&:before,
+			&:after
+				transition: background-color 0.3s ease-in
+				background-color: #919799			
+
+		&:before //vertical stik
+			+pseudo
+			+size(2px, 100%)
+			top: 0
+			left: 11px
+			background-color: #c6cacc
+			transition: transform 0.3s ease
+
+		&:after //gorizontal stik
+			+pseudo
+			+size(100%, 2px)
+			+center
+			background-color: #c6cacc
+
+	&__body
+		margin: 30px 0 0
+
+		.butn-wrap
+			margin: 20px 0 0
+			text-align: center
+
+
+	&__form
+
+		&-item
+			&:not(:last-child)
+				margin: 0 0 16px
+
+
+
+
+	&__footer
+		margin: 18px 0 0
+
+		&-reg
+			text-align: center
+
+			&-title
+	
+
+
+.link-blue
+	color: #0cb9f2
+	border-bottom: 1px dotted #0cb9f2
+	padding-bottom: 2px
+	&:hover
+		text-decoration: none
+		color: #0cb9f2
+		border: none
+
+.link-green
+	font-weight: 700
+	color: #3eb39f
+	border-bottom: 1px dotted #3eb39f
+	padding-bottom: 3px
+	&:hover
+		color: #3eb39f
+		text-decoration: none
+		border: none
+
+
+
+
+
+
+
+
+
+.popup-request
+	display: none
+	position: fixed
+	width: 100%
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: #f2f8fa
+	box-shadow: 0 -7px 7px rgba(0, 0, 0, 0.15)
+	z-index: 200
+
+	.icon-x-wrap
+		position: absolute
+		+size(48px, 48px)
+		top: -58px
+		+wcenter
+		cursor: pointer
+		.icon-x
+			fill: $color-icon-fill
+			transition: fill 0.1s ease-in
+
+			&:hover
+				fill: #000
+
+
+
+	.popup__inner
+		display: flex
+		max-width: 1000px
+		margin: 0 auto
+		padding: 0 10px
+
+	.popup__item
+		width: 50%		
+		
+		&--left
+			margin-right: 12px
+			padding: 25px 0
+
+		&--right
+			margin-left: 12px
+			padding: 25px
+			position: relative
+			background-color: #e1eaed
+
+		.butn-wrap
+			margin: 15px 0 0
+
+	.popup__form-item
+
+		&:not(:last-child)
+			margin-bottom: 30px
+
+		.input
+			max-width: 350px
+
+		&-row
+			display: flex
+			align-items: center
+
+		&-col
+
+			&--left
+				max-width: 225px
+
+			&--right
+				max-width: 200px
+				margin-top: 20px
+				margin-left: 25px
+
+				p
+					line-height: 1rem
+
+	
+
+	.cost
+		font-size: 0.8125rem //13px
+
+		td:first-child
+			width: 225px
+
+		&__title
+			font-weight: 700
+
+		&__head
+			tr
+				height: 50px			
+
+		&__body
+			tr
+				height: 30px
+
+		&__foot
+			tr
+				height: 50px
+			
+
+		&__num
+			font-weight: 700
+			&--green
+				color: #3eb39f
+
+			&--big
+				font-size: 1.5rem
+				line-height: 1
+
+		.hint
+			position: absolute
+			width: 200px
+			top: -20px
+			left: 20px
+
+			font-size: 0.6875rem //11px
+			line-height: 1
+			color: #fff
+
+			border-radius: 3px
+			background-color: rgba(#212426, 0.9)
+
+			transition: all 0.2s ease-in-out
+
+			visibility: hidden
+			opacity: 0
+
+			&__inner
+				padding: 18px 24px
+
+			&__title
+
+				&-text
+					font-size: 0.8125rem //13px
+					text-align: center
+					font-weight: 700
+
+			&__table
+				margin: 7px 0 0
+				table
+					width: 100%
+					table-layout: fixed
+				td
+					width: 50%
+				tr
+					height: 22px
+
+
+
+
+
+
+	.superhero-3
+		position: absolute
+		top: 32px
+		right: -100px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1299px)
+	//
+
+
+@media only screen and (max-width : 991px)
+
+	.popup-request
+
+		.superhero-3
+			display: none
+
+		.popup
+
+			&__inner
+				padding: 0
+
+			&__item				
+
+				&--left
+					padding: 25px 10px
+
+		.cost
+			td
+				&:first-child
+					width: 200px
+
+			.hint
+
+				&__table
+					td
+						width: 50%
+
+
+	.form
+
+		.select-box
+
+			.droplist
+
+				&__item
+					padding: 8px 25px
+
+
+
+
+
+
+
+@media only screen and (max-width : 767px)
+	
+	.popup
+		position: absolute
+		top: 50px
+		transform: translate(-50%, 0)
+
+	.popup-request
+
+		.cost
+			td
+				&:first-child
+					width: auto
+
+			.hint
+				left: auto
+				right: 20px
+
+
+		.popup
+			&__form
+				&-item
+					&-row
+						flex-direction: column
+					&-col
+						max-width: initial
+
+			&__item
+				&--left
+					margin: 0
+				&--right
+					margin: 0
+					padding: 25px 10px
+
+
+@media only screen and (max-width : 575px)
+	
+	.popup
+		width: calc(100% - 20px)
+		max-width: 350px
+
+
+	.popup-request
+		position: absolute
+		bottom: auto
+		top: 0
+		overflow: hidden
+
+		.icon-x-wrap
+			+size(30px, 30px)
+			top: 10px
+			left: auto
+			right: 10px
+			transform: none
+
+		.superhero-3
+			// display: block
+
+		.cost
+			width: 100%
+
+			.hint
+				right: auto
+				left: 20px
+
+
+
+
+
+
+		.popup
+
+			&__inner
+				flex-direction: column
+
+			&__item
+				width: 100%
+
+				&--left
+					padding: 40px 10px 25px					
+					
+				&--right
+
+				.butn-wrap
+					text-align: center
+
+			&__form
+
+				&-item
+					max-width: 350px
+					margin-left: auto
+					margin-right: auto
+
+					.input
+						margin: 0 auto
+					
+
+
+	//меняет выпадаение списка "вверх" на "вниз" на мелких
+	.form
+
+		.select-box
+
+			.droplist				
+					
+				&--up
+					bottom: auto
+					top: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END POP-UPs

@@ -1,0 +1,813 @@
+extends ../../core/pug/_layout
+
+
+block content
+
+	//=============== block-0 ===============
+	.block-0
+
+		header.main-header
+			.container-fluid
+				.main-header__inner
+
+					.main-header__left
+
+						.logo
+							a(href="#" target="_blank" rel="noopener noreferrer")
+								img.logo__img(src="img/logo.png", alt="logo")
+						
+						.main-header__menu
+							nav
+								button.main-header__menu-item(disabled="disabled") Олимпиады
+								button.main-header__menu-item Разработки
+
+					.main-header__right
+						.main-header__right-login
+							a.butn.butn--login.js_open_modal(href="#js_login" target="_blank" rel="noopener noreferrer") Войти
+						//- .main-header__right-user
+							.user
+								.user__name
+									p.user__name-text Анастасия
+								.user__ava
+									img.user__ava-img(src="img/ava-1.jpg", alt="avatar")
+
+								.user__menu
+									nav.user__menu-list
+										a.user__menu-item(href="#" target="_blank" rel="noopener noreferrer") Мои заявки
+											+svg("icon-menu-request", "menu-icon")
+										a.user__menu-item.is-active(href="#" target="_blank" rel="noopener noreferrer") Мой профиль
+											+svg("icon-menu-user", "menu-icon")
+										a.user__menu-item(href="#" target="_blank" rel="noopener noreferrer") Арихив
+											+svg("icon-menu-archive", "menu-icon")
+										a.user__menu-item(href="#" target="_blank" rel="noopener noreferrer") Выйти
+											+svg("icon-menu-exit", "menu-icon")
+
+
+
+		.title-field
+			.container-fluid
+				.title-field__inner.bg-items-place
+					.row
+						.col-lg
+
+							.title-field__wrap
+
+								.main-title
+									.main-title__inner
+										h2.main-title__text-2 Международные #[b онлайн олимпиады] по математике
+										h1.main-title__text «Мир математики»
+										h2.main-title__text-3 с 1 по 11 классы
+										p.main-title__text-4.fz-medium Организатор ООО «КОМПЭДУ», УНН  790867878
+
+								.info-title
+									.info-title__item.info-title__item-date
+										.info-title__item-icon
+											+svg("icon-header-calendar", "info-icon")
+										.info-title__text
+											p.text-1 Проведение олимпиад
+											p.text-2 с 11 декабря по 28 февраля
+
+									.info-title__item.info-title__item-price
+										.info-title__item-icon
+											+svg("icon-header-wallet", "info-icon")
+										.info-title__text
+											p.text-1 Оргвзнос
+											p.text-2 59 рублей
+
+								.butn-wrap
+									button.butn.butn--xl.butn--green.js_open_modal(href="#js_popup-request--1") Принять участие
+
+						.col-lg.hidden-md-down
+
+							.advantages
+								ul.advantages__list
+									li.advantages__item.advantages__item--1 Простое и удобное участие
+									li.advantages__item.advantages__item--2 Доступная стоимость
+									li.advantages__item.advantages__item--3 Полезные подарки
+
+
+							.superhero-1
+								.superhero-1__wrap
+									img.superhero-1__img(src="img/mathman1.png", alt="mathman1")
+					.planets
+						.planet.planet--1
+						.planet.planet--2
+						.planet.planet--3
+					
+					.meteors
+						.meteor.meteor--1
+						.meteor.meteor--2
+						.meteor.meteor--3
+						.meteor.meteor--4
+
+					.nums
+						.num.num--6
+						.num.num--4
+						.num.num--0
+						.num.num--7
+						.num.num--8
+						.num.num--9
+						.num.num--5
+
+	//=============== /block-0 ===============
+
+
+
+	//=============== /block-1 ===============
+	.block-1
+
+		.container
+			.row
+				.col-lg
+					.block-1__inner.bg-items-place
+
+						.limit
+
+							.title
+								h3.title__text Приветствуем вас на сайте онлайн олимпиад по математике
+				
+								p.title__descr Проведите олимпиаду вместе с нашим проектом! У вас разбегутся глаза от количества разнообразных и занимательных заданий, которые помогут ученикам сосредоточить своё внимание на учёбе и просто весело и с пользой провести время.
+
+								p.title__descr Участвовать легко и удобно! Просто укажите количество учеников, их имена и фамилии, внесите ответы и сразу получите результаты и награды.
+
+
+							.tiles
+								.tiles__inner
+									
+									.tile.tile--1
+										.tile__title
+											h4.tile__title-text Простое и удобное участие
+										.tile__descr
+											p.tile__descr-text.fz-medium Минимальные затраты ваших сил и времени, чтобы подать заявку, ввести ответы и получить результаты.
+									
+									.tile.tile--2
+										.tile__title
+											h4.tile__title-text Доступная стоимость
+										.tile__descr
+											p.tile__descr-text.fz-medium Чем больше учеников вы привлекаете, тем меньше сумма оргвзноса.
+
+									.tile.tile--3
+										.tile__title
+											h4.tile__title-text Занимательные задания
+										.tile__descr
+											p.tile__descr-text.fz-medium Интересные, красочные задания разной степени сложности подойдут всем участникам.
+
+									.tile.tile--4
+										.tile__title
+											h4.tile__title-text Красочные наградные
+										.tile__descr
+											p.tile__descr-text.fz-medium Бесплатные свидетельства и благодарности для учителей и родителей, дипломы и сертификаты для победителей и участников.
+
+									.tile.tile--5
+										.tile__title
+											h4.tile__title-text Подарок каждому участнику
+										.tile__descr
+											p.tile__descr-text.fz-medium Ни один участник не останется без полезного и интересного подарка.
+
+									.tile.tile--6
+										.tile__title
+											h4.tile__title-text Благодарность родителям
+										.tile__descr
+											p.tile__descr-text.fz-medium Родители всех участников получат специальную благодарность.
+							.nums
+								.num-big.num-big--4
+								.num-big.num-big--eq
+								.num-big.num-big--5
+								.num-big.num-big--7
+
+	//=============== /block-1 ===============
+
+
+
+	//=============== block-2 ===============
+	.block-2
+		.container
+			.row
+				.col-lg
+
+					.reward
+						.reward__inner
+
+							.reward__title
+								h2.reward__title-text Награды учителям и координаторам
+
+							.reward__descr
+								p.reward__descr-text.fz-medium Каждый учитель или координатор делает очень полезную работу, привлекая учеников к участию в олимпиадах. Именно поэтому мы подготовили для вас эти подарки и поощрения.
+
+							.reward__list
+								ul
+									li.reward__list-item
+										h4.reward__list-title Бесплатные благодарственные письма
+										p.reward__list-descr.fz-medium Всем учителям и координаторам.
+
+									li.reward__list-item
+										h4.reward__list-title Бесплатные свидетельства о подготовке победителя или призёра.
+										p.reward__list-descr.fz-medium Если у вас более 10 участников.
+
+									li.reward__list-item
+										h4.reward__list-title Благодарность учреждению образования.
+										p.reward__list-descr.fz-medium Если у вас более 5 участников.
+				
+				.col-lg
+					.reward-gallery
+						.reward-gallery__item.reward-gallery__item--1
+							img.reward-gallery__img(src="http://via.placeholder.com/477x336/f2f2f2?text=PICTURE-1", alt="picture")
+						.reward-gallery__item.reward-gallery__item--2
+							img.reward-gallery__img(src="http://via.placeholder.com/477x336/ededed?text=PICTURE-2", alt="picture")
+						.reward-gallery__item.reward-gallery__item--3
+							img.reward-gallery__img(src="http://via.placeholder.com/477x336/e6e6e6?text=PICTURE-3", alt="picture")
+
+	//=============== /block-2 ===============
+
+
+
+	//=============== block-3 ===============
+	.block-3
+		.container
+			.row
+				.col-lg.order-top
+					.gift-gallery
+						.gift-gallery__item.gift-gallery__item--1
+							img.reward-gallery__img(src="http://via.placeholder.com/477x336/e6e6e6?text=PICTURE-1", alt="picture")
+						.gift-gallery__item.gift-gallery__item--2
+							img.reward-gallery__img(src="http://via.placeholder.com/477x336/ededed?text=PICTURE-2", alt="picture")
+						.gift-gallery__item.gift-gallery__item--3
+							img.reward-gallery__img(src="http://via.placeholder.com/477x336/f2f2f2?text=PICTURE-3", alt="picture")
+
+				.col-lg
+
+					.gift
+						.gift__inner
+
+							.gift__title
+								h2.gift__title-text Подарки победителям и участникам
+
+							.gift__descr
+								p.gift__descr-text.fz-medium Ученики не получают зарплату, но мы прекрасно понимаем, что они стараются и должны быть вознаграждены. Для этого мы и подготовили эти интересные и полезные подарки.
+
+							.gift__list
+								ul
+									li.gift__list-item
+										h4.gift__list-title Бесплатные дипломы и сертификаты всем участникам.
+									li.gift__list-item
+										h4.gift__list-title Благодарность родителям.
+									li.gift__list-item
+										h4.gift__list-title Тематическая настольная игра «Школьный марафон».
+									li.gift__list-item
+										h4.gift__list-title Занимательные и доступные задания.
+									li.gift__list-item
+										h4.gift__list-title Возможность узнать свои ошибки и посмотреть решения.
+
+	//=============== /block-3 ===============
+
+
+
+	//=============== block-4 ===============
+	.block-4
+		.container
+			.row
+				.col-lg
+					.block-4__inner.bg-items-place
+
+						.butn-wrap
+							button.butn.butn--xl.butn--green.js_open_modal(href="#js_popup-request--1") Принять участие
+
+						
+
+						.planets
+							.planet.planet--4
+							.planet.planet--5
+						.meteors
+							.meteor.meteor--5
+							.meteor.meteor--6
+
+	//=============== /block-4 ===============
+
+
+
+	//=============== block-5 ===============
+	.block-5
+		.container
+			.row
+				.col-lg
+					.block-5__inner.bg-items-place
+
+						.limit
+
+							.superhero-2
+								img.superhero-2__img(src="img/mathman2.png", alt="mathman2")
+
+							.title
+								.title__inner
+									h2.title__text Интересные и доступные задания
+									p.title__subtext Олимпиады включают задания разного уровня сложности, чтобы испытать свои силы могли учащиеся всех возрастов и уровня знаний. Задания полностью соответствуют школьной программе, развивают кругозор и интерес к предмету. Они помогают не только повторить и систематизировать весь пройденный материал, но и дают стимул для дальнейшего обучения.
+
+							.slider-box
+								.slider
+									.slide
+										.slide__inner
+											.slide__question
+												.slide__question-pic
+													img.slide__question-img(src="img/question-1.jpg", alt="question picture")
+
+												//- .slide__question-head
+												//- 	p.slide__question-text Белочка под каждым рисунком подписывала число. Где она допустила ошибку?
+												//- .slide__question-pic
+												//- 	img.slide__question-img(src="img/question-1.jpg", alt="question picture")
+												//- .slide__question
+												//- 	input(type="radio")
+												//- 	input(type="radio")
+												//- 	input(type="radio")
+												//- 	input(type="radio")
+
+											.slide__descr
+												.slide__descr-head
+													h4.slide__descr-title Задания с одиночным выбором
+												.slide__descr-sec
+													p.slide__descr-text.fz-medium Важно отметить, что мы предлагаем задания для учеников разной степени подготовки. Поэтому даже слабые ученики имеют шансы решить часть заданий, участвуя в наших олимпиадах. Ну а для сильных мы подготовили более серьёзные задачи, для решения которых нужно приложить усилия.
+
+								.slider-navigation
+
+									.slider-navigation__arrows
+										.arrow.arrow--left
+											+svg("icon-ar-left", "")
+										.arrow.arrow--right
+											+svg("icon-ar-left", "")
+
+									.slider-navigation__dots
+										.dot
+										.dot.is-active
+										.dot
+										.dot
+										.dot
+
+
+							.nums
+								.num-big.num-big--5
+								.num-big.num-big--1
+								.num-big.num-big--6
+								.num-big.num-big--8
+								.num-big.num-big--eq
+
+
+	//=============== /block-5 ===============
+
+
+
+	//=============== block-6 ===============
+	.block-6
+		.container
+			.row
+				.col-lg
+
+					.faq
+						.faq__inner
+
+							.faq__title
+								h2.faq__title-text Остались вопросы? Посмотрите здесь
+
+							.faq-block
+								
+								.faq-block__item
+									.faq-block__item-title
+										h4.title Как участвовать или как будет проходить олимпиада?
+											.plus-minus
+
+									.faq-block__item-descr.is-hidden
+										p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum rem eligendi vitae ullam tenetur sunt nesciunt provident repellendus, eum ad itaque dignissimos soluta architecto, maiores veritatis maxime eaque illo?
+
+								.faq-block__item.is-active
+									.faq-block__item-title
+										.plus-minus
+										h4.title Как участвовать или как будет проходить олимпиада?
+									.faq-block__item-descr
+										p.text.fz-medium Если вы делаете оплату через электронную платежную систему, то она пройдет мгновенно, сразу после совершения операции.
+										p.text.fz-medium Если же вы выбрали способ оплаты по квитанции, то обычно оплата проходит в течение 1-5 банковских дней (чаще всего 2-3 дня).
+										p.text.fz-medium Если оплата не пройдет в указанные сроки, то вам будет предложено загрузить копию квитанции, по которой мы сможем отыскать ваш платеж и отметить заявки оплаченными.
+
+								.faq-block__item
+									.faq-block__item-title
+										.plus-minus
+										h4.title Можно ли оплатить несколько заявок одним платежом?
+									.faq-block__item-descr.is-hidden
+										p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum rem eligendi vitae ullam tenetur sunt nesciunt provident repellendus, eum ad itaque dignissimos soluta architecto, maiores veritatis maxime eaque illo?
+
+								.faq-block__item
+									.faq-block__item-title
+										.plus-minus
+										h4.title Можно ли исправить ошибочно введенные ответы ученика?
+									.faq-block__item-descr.is-hidden
+										p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum rem eligendi vitae ullam tenetur sunt nesciunt provident repellendus, eum ad itaque dignissimos soluta architecto, maiores veritatis maxime eaque illo?
+
+								.faq-block__item
+									.faq-block__item-title
+										.plus-minus
+										h4.title Что делать если ученик заболел и не смог принять участие в олимпиаде?
+									.faq-block__item-descr.is-hidden
+										p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum rem eligendi vitae ullam tenetur sunt nesciunt provident repellendus, eum ad itaque dignissimos soluta architecto, maiores veritatis maxime eaque illo?
+
+								.faq-block__item
+									.faq-block__item-title
+										.plus-minus
+										h4.title Куда обратиться, если у меня остались вопросы?
+									.faq-block__item-descr.is-hidden
+										p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illum rem eligendi vitae ullam tenetur sunt nesciunt provident repellendus, eum ad itaque dignissimos soluta architecto, maiores veritatis maxime eaque illo?
+
+	//=============== /block-6 ===============
+
+
+
+	//=============== block-7 ===============
+	.block-7
+		.container
+			.row
+				.col-lg
+
+					.limit
+
+						.docs
+							.docs__inner
+
+								.docs__title
+									h2.docs__title-text Документы и инструкции
+
+								.docs__block
+
+									.docs__item
+										a(href="#" target="_blank" rel="noopener noreferrer")
+											.docs__item-icon
+												+svg("icon-zip", "docs-icon")
+											.docs__item-title
+												span.docs__item-text Положение о проведении международных олимпиад по математике «Мир математики»
+											.docs__item-meta
+												span.docs__item-type.fz-medium ZIP
+												span.docs__item-size.fz-medium 186,6 КБ
+
+									.docs__item
+										a(href="#" target="_blank" rel="noopener noreferrer")
+											.docs__item-icon
+												+svg("icon-zip", "docs-icon")
+											.docs__item-title
+												span.docs__item-text Приказ о проведении международных олимпиад по математике «Мир математики»
+											.docs__item-meta
+												span.docs__item-type.fz-medium ZIP
+												span.docs__item-size.fz-medium 64,9 КБ
+
+									.docs__item
+										a(href="#" target="_blank" rel="noopener noreferrer")
+											.docs__item-icon
+												+svg("icon-zip", "docs-icon")
+											.docs__item-title
+												span.docs__item-text Договор на оказание услуг по организации проведения олимпиад
+											.docs__item-meta
+												span.docs__item-type.fz-medium ZIP
+												span.docs__item-size.fz-medium 105,7 КБ
+
+									.docs__item
+										a(href="#" target="_blank" rel="noopener noreferrer")
+											.docs__item-icon
+												+svg("icon-pdf", "docs-icon")
+											.docs__item-title
+												span.docs__item-text Инструкции по участию в олимпиадах
+											.docs__item-meta
+												span.docs__item-type.fz-medium ZIP
+												span.docs__item-size.fz-medium 754,1 КБ
+
+	//=============== /block-7 ===============
+
+
+
+	//=============== footer ===============
+	footer.main-footer
+		.container.bg-items-place
+			.row
+				.col-lg
+					.butn-wrap
+						button.butn.butn--xl.butn--green.js_open_modal(href="#js_popup-request--1") Принять участие
+
+					.planets
+						.planet.planet--6
+						.planet.planet--7
+					.meteors
+						.meteor.meteor--7
+						.meteor.meteor--8
+
+		.main-footer__meta
+			.container
+				.row
+					.col-md-3
+						.meta-title
+							p.meta-title__text.fz-medium &copy; 2017, Мир олимпиад
+						.meta-links
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Обратная связь
+
+					.col-md-9.organizer
+						.meta-title
+							p.meta-title__text.fz-medium Организатор ООО «КОМПЭДУ», УНН 790867878
+						.meta-links
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Пользовательское соглашение
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Политика конфиденциальности
+
+	//=============== /footer ===============
+
+
+
+	//=============== POP-UPs ===============
+
+	.overlay#js_overlay
+
+	//LOGIN
+	.popup.popup--login.js_popup#js_login
+		.popup__inner
+			.popup__head
+				h4.popup__head-text Войти в мой профиль
+				.popup__close.js_popup_close
+
+			.popup__body
+				form.popup__form.form(action="" method="")
+					.popup__form-item
+						label.label(for="email") Ваш e-mail
+						input.input.input--lg(type="text", id="email", placeholder="mymail@mail.com")
+					.popup__form-item
+						label.label(for="password") Пароль
+						.input-wrap
+							input.input.input--lg.input--is-error(type="password", id="password", placeholder="• • • • • • • • • • • •")
+							+svg("icon-pass", "eye-icon")
+							span.validation-error Пользователь не найден
+
+					.popup__form-item
+						a.link-blue.fz-spec(href="") Забыли пароль?
+
+					.butn-wrap
+						button.butn.butn--md.butn--turq-green Войти
+			
+			.popup__footer
+				.popup__footer-reg
+					p.popup__footer-reg-title Впервые у нас?
+					a.link-green.js_open_modal(href="#js_register") Зарегистрируйтесь!
+
+
+	//REGISTR
+	.popup.popup--registr.js_popup#js_register
+		.popup__inner
+			.popup__head
+				h4.popup__head-text Регистрация
+				.popup__close.js_popup_close
+
+			.popup__body
+				form.popup__form.form(action="" method="")
+					.popup__form-item
+						label.label(for="email2") Ваш e-mail
+						input.input.input--lg(type="text", id="email2", placeholder="mymail@mail.com")
+					.popup__form-item
+						label.label(for="password2") Пароль
+						.input-wrap
+							input.input.input--lg(type="password", id="password2", placeholder="• • • • • • • • • • • •")
+							+svg("icon-pass", "eye-icon")
+
+					.popup__form-item
+						p.fz-spec Нажимая на кнопку «Зарегистрироваться», вы принимаете #[a.link-blue(href="") «Пользовательское соглашение»] и подтверждаете, что ознакомлены с #[a.link-blue(href="") «Политикой конфиденциальности»]
+
+					.butn-wrap
+						button.butn.butn--lg.butn--turq-green Зарегистрироваться
+			
+			.popup__footer
+				.popup__footer-reg
+					p.popup__footer-reg-title Уже есть данные для входа?
+					a.link-green.js_open_modal(href="#js_login") Войти на сайт
+
+	
+
+
+	//ADD REQUEST MAIL -- 1 
+	.popup-request.popup-request--1.js_popup#js_popup-request--1
+		.icon-x-wrap.js_popup_close
+			+svg("icon-close-rnd", "icon-x")
+		form.popup__form.form(action="" method="")
+			.popup__inner
+				.popup__item.popup__item--left
+
+					.popup__form-item
+						label.label(for="email3") Укажите свой e-mail или #[a.link-blue(href="") войдите]
+						input.input.input--lg(type="text", id="email3", placeholder="mymail@mail.com")
+
+					.popup__form-item.popup__form-item-row
+						.popup__form-item-col.popup__form-item-col--left
+							label.label(for="quantity1") Количество участников
+							.input-wrap
+								input.input.input--lg.input--nums(type="text", id="quantity1", value="16")
+								.field-arrow.field-arrow--left
+									+svg("icon-ar-sm-left", "num-arrow-icon num-arrow-icon--left")
+								.field-arrow.field-arrow--right
+									+svg("icon-ar-sm-left", "num-arrow-icon num-arrow-icon--right")
+						.popup__form-item-col.popup__form-item-col--right
+							p.fz-medium Добавьте ещё #[b #[span.num-partic 14] участников] и стоимость одного составит #[b.link-green #[span.num-price 39] рублей]!
+
+				.popup__item.popup__item--right
+					table.cost
+						thead.cost__head
+							tr
+								td #[span.cost__title Расчёт стоимости]
+						tbody.cost__body
+							tr
+								td #[span Один участник]
+									.question-icon-wrap
+										+svg("icon-question", "question-icon")
+										
+										.hint
+											.hint__inner
+												.hint__title
+													.hint__title-text Стоимость участника
+												.hint__table
+													table
+														tr
+															td До 10
+															td 49 руб.
+														tr
+															td 10 - 30
+															td 39 руб.
+														tr
+															td 30 - 100
+															td 29 руб.
+														tr
+															td 100 и более
+															td 19 руб.
+
+								td.cost__num 39 руб.
+							tr
+								td Все участники
+								td.cost__num 784 руб.
+							tr
+								td Компенсация расходов
+								td.cost__num.cost__num--green 176 руб.
+						tfoot.cost__foot
+							tr
+								td К оплате организатору
+								td.cost__num.cost__num--big 608 руб.
+					
+					.butn-wrap
+						button.butn.butn--lg.butn--turq-green Подать заявку
+
+					.superhero-3
+						img.superhero-1__img(src="img/mathman3.png", alt="mathman")
+
+
+
+	//ADD REQUEST MAIL -- 2
+	.popup-request.popup-request--2
+		.icon-x-wrap
+			+svg("icon-close-rnd", "icon-x")
+		form.popup__form.form(action="" method="")
+			.popup__inner
+				.popup__item.popup__item--left
+
+					.popup__form-item.popup__form-item-row
+						.popup__form-item-col.popup__form-item-col--left
+							label.label(for="quantity2") Количество участников
+							.input-wrap
+								input.input.input--lg.input--nums(type="text", id="quantity2", value="16")
+								.field-arrow.field-arrow--left
+									+svg("icon-ar-sm-left", "num-arrow-icon num-arrow-icon--left")
+								.field-arrow.field-arrow--right
+									+svg("icon-ar-sm-left", "num-arrow-icon num-arrow-icon--right")
+						.popup__form-item-col.popup__form-item-col--right
+							p.fz-medium Добавьте ещё #[b #[span.num-partic 14] участников] и стоимость одного составит #[b.link-green #[span.num-price 39] рублей]!
+
+					.popup__form-item
+						.butn-wrap
+							button.butn.butn--lg.butn--turq-green Подать заявку
+
+				.popup__item.popup__item--right
+					table.cost
+						thead.cost__head
+							tr
+								td #[span.cost__title Расчёт стоимости]
+						tbody.cost__body
+							tr
+								td #[span Один участник]
+									.question-icon-wrap
+										+svg("icon-question", "question-icon")
+
+										.hint
+											.hint__inner
+												.hint__title
+													.hint__title-text Стоимость участника
+												.hint__table
+													table
+														tr
+															td До 10
+															td 49 руб.
+														tr
+															td 10 - 30
+															td 39 руб.
+														tr
+															td 30 - 100
+															td 29 руб.
+														tr
+															td 100 и более
+															td 19 руб.
+
+								td.cost__num 39 руб.
+							tr
+								td Все участники
+								td.cost__num 784 руб.
+							tr
+								td Компенсация расходов
+								td.cost__num.cost__num--green 176 руб.
+						tfoot.cost__foot
+							tr
+								td К оплате организатору
+								td.cost__num.cost__num--big 608 руб.
+
+
+	//ADD REQUEST MAIL -- 3 
+	.popup-request.popup-request--3
+		.icon-x-wrap
+			+svg("icon-close-rnd", "icon-x")
+		form.popup__form.form(action="" method="")
+			.popup__inner
+				.popup__item.popup__item--left
+
+					.popup__form-item
+						label.label(for="email4") Укажите свой e-mail или #[a.link-blue(href="") войдите]
+						input.input.input--lg(type="text", id="email4", placeholder="mymail@mail.com")
+
+					.popup__form-item
+						label.label(for="select") Мероприятие
+						.select-box
+							.select-wrap
+								select.select.input--lg#select
+									option Международные олимпиады по математике «Мир математики» 1-11 классы
+									option Международные олимпиады по математике «Мир математики» 1-11 классы
+									option Международные олимпиады по математике «Мир математики» 1-11 классы
+							.droplist.droplist--up
+								ul
+									li.droplist__item Международные олимпиады по математике «Мир математики» 1-11 классы
+									li.droplist__item Международные олимпиады по математике «Мир математики» 1-11 классы
+									li.droplist__item Международные олимпиады по математике «Мир математики» 1-11 классы
+
+					.popup__form-item.popup__form-item-row
+						.popup__form-item-col.popup__form-item-col--left
+							label.label(for="quantity3") Количество участников
+							.input-wrap
+								input.input.input--lg.input--nums(type="text", id="quantity3", value="16")
+								.field-arrow.field-arrow--left
+									+svg("icon-ar-sm-left", "num-arrow-icon num-arrow-icon--left")
+								.field-arrow.field-arrow--right
+									+svg("icon-ar-sm-left", "num-arrow-icon num-arrow-icon--right")
+						.popup__form-item-col.popup__form-item-col--right
+							p.fz-medium Добавьте ещё #[b #[span.num-partic 14] участников] и стоимость одного составит #[b.link-green #[span.num-price 39] рублей]!
+
+				.popup__item.popup__item--right
+					table.cost
+						thead.cost__head
+							tr
+								td #[span.cost__title Расчёт стоимости]
+						tbody.cost__body
+							tr
+								td #[span Один участник]
+									.question-icon-wrap
+										+svg("icon-question", "question-icon")
+										
+										.hint
+											.hint__inner
+												.hint__title
+													.hint__title-text Стоимость участника
+												.hint__table
+													table
+														tr
+															td До 10
+															td 49 руб.
+														tr
+															td 10 - 30
+															td 39 руб.
+														tr
+															td 30 - 100
+															td 29 руб.
+														tr
+															td 100 и более
+															td 19 руб.
+
+								td.cost__num 39 руб.
+							tr
+								td Все участники
+								td.cost__num 784 руб.
+							tr
+								td Компенсация расходов
+								td.cost__num.cost__num--green 176 руб.
+						tfoot.cost__foot
+							tr
+								td К оплате организатору
+								td.cost__num.cost__num--big 608 руб.
+					
+					.butn-wrap
+						button.butn.butn--lg.butn--turq-green Подать заявку
+
+					.superhero-3
+						img.superhero-1__img(src="img/mathman3.png", alt="mathman")
+
+
+
+
+
+	//=============== /POP-UPs ===============

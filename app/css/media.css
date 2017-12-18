@@ -1,0 +1,448 @@
+@media only screen and (max-width: 1299px) {
+  /*=============== BLOCK-0 ===============*/
+  .block-0 .title-field__inner {
+    width: 960px;
+    padding: 0 15px;
+  }
+  .block-0 .title-field .main-title__text {
+    margin: 14px 0 0;
+  }
+  .block-0 .title-field .info-title__item-date {
+    width: 320px;
+  }
+  .block-0 .title-field .advantages__item--2 {
+    top: 250px;
+    right: 0;
+  }
+  .block-0 .title-field .advantages__item--3 {
+    top: 550px;
+  }
+  .block-0 .title-field .superhero-1 {
+    top: 180px;
+  }
+  /*=============== END BLOCK-0 ===============*/
+  /*=============== BLOCK-1 ===============*/
+  .block-1 .title {
+    padding: 0 60px;
+  }
+  /*=============== END BLOCK-1 ===============*/
+  /*=============== BLOCK-2 ===============*/
+  .block-2 {
+    padding: 50px 0 20px;
+  }
+  .block-2 .container {
+    max-width: 960px;
+  }
+  .block-2 .reward-gallery__item {
+    width: 350px;
+    height: 245px;
+  }
+  .block-2 .reward-gallery__item--2 {
+    top: 60px;
+    left: 130px;
+  }
+  .block-2 .reward-gallery__item--3 {
+    top: 120px;
+    left: 280px;
+  }
+  /*=============== END BLOCK-2 ===============*/
+  /*=============== BLOCK-3 ===============*/
+  .block-3 {
+    padding: 20px 0;
+  }
+  .block-3 .container {
+    max-width: 960px;
+  }
+  .block-3 .gift-gallery__item {
+    width: 350px;
+    height: 245px;
+  }
+  .block-3 .gift-gallery__item--1 {
+    left: auto;
+    right: 280px;
+  }
+  .block-3 .gift-gallery__item--2 {
+    top: 60px;
+    left: auto;
+    right: 130px;
+  }
+  .block-3 .gift-gallery__item--3 {
+    top: 120px;
+    left: auto;
+    right: 0;
+  }
+  /*=============== END BLOCK-3 ===============*/
+  /*=============== BLOCK-5 ===============*/
+  .block-5 .superhero-2 {
+    width: 180px;
+    right: 100px;
+  }
+  .block-5 .title__inner {
+    padding: 0 50px;
+  }
+  .block-5 .slider-box {
+    padding: 0 20px;
+  }
+  .block-5 .slider-box .slider-navigation {
+    position: relative;
+  }
+  .block-5 .slider-box .slider-navigation__arrows .arrow {
+    top: 0;
+  }
+  .block-5 .slider-box .slider-navigation__arrows .arrow--left {
+    left: 0;
+  }
+  .block-5 .slider-box .slider-navigation__arrows .arrow--right {
+    right: 0;
+  }
+  .block-5 .num-big--6 {
+    right: -60px;
+  }
+  .block-5 .num-big--8 {
+    top: -40px;
+  }
+  /*=============== END BLOCK-5 ===============*/
+  /*=============== BLOCK-7 ===============*/
+  .block-7 .docs__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 400px;
+    -ms-flex: 1 1 400px;
+    flex: 1 1 400px;
+  }
+  /*=============== END BLOCK-7 ===============*/
+}
+
+@media only screen and (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+  /*=============== BLOCK-0 ===============*/
+  .block-0 {
+    padding: 0 0 160px;
+  }
+  .block-0 .main-header__menu {
+    margin-left: 30px;
+  }
+  .block-0 .main-header__menu-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .block-0 .title-field__inner {
+    padding: 0;
+    width: auto;
+  }
+  .block-0 .title-field .main-title {
+    text-align: center;
+  }
+  .block-0 .title-field .main-title__text-2 {
+    margin: 0 auto;
+  }
+  .block-0 .title-field .info-title {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .block-0 .title-field .butn-wrap {
+    text-align: center;
+  }
+  /*=============== END BLOCK-0 ===============*/
+  /*=============== BLOCK-1 ===============*/
+  .block-1__inner {
+    padding: 30px 0 0;
+    margin: -160px 0 0;
+  }
+  .block-1 .title {
+    padding: 0 40px;
+  }
+  .block-1 .title__text {
+    text-align: center;
+  }
+  .block-1 .tiles .tile {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 200px;
+    -ms-flex: 1 1 200px;
+    flex: 1 1 200px;
+  }
+  .block-1 .nums {
+    display: none;
+  }
+  /*=============== END BLOCK-1 ===============*/
+  /*=============== BLOCK-2 ===============*/
+  .block-2 {
+    padding: 30px 0 0;
+  }
+  .block-2 .reward__inner {
+    padding: 0;
+  }
+  .block-2 .reward__title-text {
+    text-align: center;
+  }
+  .block-2 .reward-gallery {
+    height: 310px;
+    margin: 20px 0 0;
+  }
+  .block-2 .reward-gallery__item--2 {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 40;
+  }
+  .block-2 .reward-gallery__item--3 {
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+  /*=============== END BLOCK-2 ===============*/
+  /*=============== BLOCK-3 ===============*/
+  .block-3 .order-top {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .block-3 .gift__inner {
+    padding: 0;
+  }
+  .block-3 .gift__title-text {
+    text-align: center;
+  }
+  .block-3 .gift-gallery {
+    height: 310px;
+    margin: 20px 0 0;
+  }
+  .block-3 .gift-gallery__item--1 {
+    left: 0;
+  }
+  .block-3 .gift-gallery__item--2 {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 40;
+  }
+  .block-3 .gift-gallery__item--3 {
+    top: 0;
+    left: auto;
+    right: 0px;
+  }
+  /*=============== END BLOCK-3 ===============*/
+  /*=============== BLOCK-4 ===============*/
+  .block-4 {
+    padding: 0 0 160px;
+  }
+  /*=============== END BLOCK-4 ===============*/
+  /*=============== BLOCK-5 ===============*/
+  .block-5 .nums {
+    display: none;
+  }
+  .block-5 .superhero-2 {
+    right: 0;
+  }
+  .block-5 .title__inner {
+    padding: 0 30px;
+  }
+  .block-5__inner {
+    margin: -160px 0 0;
+    padding: 20px 0;
+  }
+  /*=============== END BLOCK-5 ===============*/
+  /*=============== MAIN-FOOTER ===============*/
+  .main-footer .butn-wrap {
+    padding: 30px 0;
+  }
+  /*=============== END MAIN-FOOTER ===============*/
+  /*=============== BLOCK-n ===============*/
+  /*=============== END BLOCK-n ===============*/
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  /*=============== BLOCK-0 ===============*/
+  .block-0 .main-header__menu {
+    display: none;
+  }
+  .block-0 .main-header__right .user__name {
+    display: none;
+  }
+  /*=============== END BLOCK-0 ===============*/
+  /*=============== BLOCK-1 ===============*/
+  /*=============== END BLOCK-1 ===============*/
+  /*=============== BLOCK-2 ===============*/
+  .block-2 .reward-gallery {
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 20px 0 30px;
+  }
+  .block-2 .reward-gallery__item {
+    position: static;
+    width: 50%;
+    height: auto;
+  }
+  .block-2 .reward-gallery__item--2 {
+    position: absolute;
+    top: 30px;
+  }
+  /*=============== END BLOCK-2 ===============*/
+  /*=============== BLOCK-3 ===============*/
+  .block-3 .gift-gallery {
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 20px 0 30px;
+  }
+  .block-3 .gift-gallery__item {
+    position: static;
+    width: 50%;
+    height: auto;
+  }
+  .block-3 .gift-gallery__item--2 {
+    position: absolute;
+    top: 30px;
+  }
+  /*=============== END BLOCK-3 ===============*/
+  /*=============== BLOCK-4 ===============*/
+  /*=============== END BLOCK-4 ===============*/
+  /*=============== BLOCK-n ===============*/
+  /*=============== END BLOCK-n ===============*/
+  /*=============== BLOCK-5 ===============*/
+  .block-5 .superhero-2 {
+    display: none;
+  }
+  .block-5 .slider .slide__inner {
+    display: block;
+  }
+  .block-5 .slider .slide__question {
+    width: 100%;
+  }
+  .block-5 .slider .slide__descr {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+  .block-5 .slider .slide__descr-head {
+    text-align: center;
+  }
+  .block-5 .slider .slide__descr-sec {
+    margin: 15px 0 0;
+  }
+  .block-5 .slider .slide__descr-text {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  /*=============== END BLOCK-5 ===============*/
+  /*=============== MAIN-FOOTER ===============*/
+  .main-footer .organizer {
+    margin: 20px 0 0;
+  }
+  /*=============== END MAIN-FOOTER ===============*/
+  /*=============== BLOCK-6 ===============*/
+  .block-6 .faq-block__item-descr .text {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  /*=============== END BLOCK-6 ===============*/
+}
+
+@media only screen and (max-width: 575px) {
+  h2 {
+    line-height: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  /*=============== BLOCK-0 ===============*/
+  .block-0 {
+    padding: 0;
+  }
+  .block-0 .title-field .info-title {
+    display: block;
+  }
+  .block-0 .title-field .info-title__item-date {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .block-0 .title-field .info-title__item-price {
+    margin: 20px 0 0;
+  }
+  .block-0 .title-field .info-title__item-icon {
+    text-align: center;
+  }
+  .block-0 .title-field .info-title__text {
+    margin: 5px 0 0;
+    text-align: center;
+  }
+  .block-0 .title-field .info-title__text .text-2 {
+    font-size: 1rem;
+  }
+  /*=============== END BLOCK-0 ===============*/
+  /*=============== BLOCK-1 ===============*/
+  .block-1 .title {
+    padding: 0;
+  }
+  .block-1__inner {
+    margin: 0 -15px;
+    padding: 30px 15px 0;
+  }
+  .block-1 .tiles {
+    margin: 20px 0 0;
+  }
+  .block-1 .tiles .tile {
+    max-width: initial;
+    margin: 0 10px 30px;
+    padding: 80px 0 0;
+  }
+  /*=============== END BLOCK-1 ===============*/
+  /*=============== BLOCK-2 ===============*/
+  .block-2 .reward__title-text {
+    line-height: 1.5rem;
+  }
+  /*=============== END BLOCK-2 ===============*/
+  /*=============== BLOCK-4 ===============*/
+  .block-4 {
+    padding: 0;
+  }
+  /*=============== END BLOCK-4 ===============*/
+  /*=============== BLOCK-5 ===============*/
+  .block-5__inner {
+    margin: 0 -15px;
+    padding: 20px 15px;
+  }
+  .block-5 .title__inner {
+    padding: 0;
+  }
+  .block-5 .slider-box {
+    padding: 0;
+  }
+  /*=============== END BLOCK-5 ===============*/
+  /*=============== MAIN-FOOTER ===============*/
+  .main-footer .meta-links__link {
+    display: block;
+    margin: 8px 0 0;
+  }
+  /*=============== END MAIN-FOOTER ===============*/
+  /*=============== BLOCK-n ===============*/
+  /*=============== END BLOCK-0n ===============*/
+}

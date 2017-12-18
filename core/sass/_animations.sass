@@ -1,0 +1,108 @@
+@import "../libs/another-dry-animate/scss/another-dry-animate.scss"
+
+//	bounce 				bounceIn 				fadeIn 					fadeOut 				rotateIn
+//	flash	  			bounceInDown 			fadeInDown 				fadeOutDown 			rotateInDownLeft
+//	pulse 				bounceInLeft 			fadeInDownBig 			fadeOutDownBig 			rotateInDownRight
+//	rubberBand 			bounceInRight 			fadeInLeft 				fadeOutLeft 			rotateInUpLeft
+//	shake   			bounceInUp 				fadeInLeftBig 			fadeOutLeftBig 			rotateInUpRight
+//	          			bounceOut 				fadeInRight 			fadeOutRight 			rotateOut
+//	swing 				bounceOutDown 			fadeInRightBig 			fadeOutRightBig 		rotateOutDownLeft
+//	tada  				bounceOutLeft 			fadeInUp 				fadeOutUp 				rotateOutDownRight
+//	wobble 				bounceOutRight 			fadeInUpBig 			fadeOutUpBig 			rotateOutUpLeft
+//	jello 				bounceOutUp 															rotateOutUpRight
+//	
+//	
+//	flipInX 					zoomIn 				slideInDown
+//	flipInY 					zoomInDown 			slideInLeft
+//	flipOutX 					zoomInLeft 			slideInRight
+//	flipOutY 					zoomInRight 		slideInUp
+// 	lightSpeedIn: 				zoomInUp 			slideOutDown
+//	lightSpeedOut				zoomOut 			slideOutLeft
+//	hinge 						zoomOutDown 		slideOutRight
+//	rollIn						zoomOutLeft 		slideOutUp
+//	rollOut 					zoomOutRight 		
+//								zoomOutUp 			
+
+
+
+/*=============== ANIMATIONS ===============*/
+
+
+
+$item-number1:				3
+$delay-all:					1s
+$delay-item:				0.5s
+@for $i from 1 through $item-number1
+	.planet--anim:nth-child(#{$i})
+		@include fadeIn($duration: 0.5s, $delay: $delay-all + ($delay-item * $i) - $delay-item, $iterations: 1)
+		opacity: 1
+		transition: opacity 0.5s ease
+
+
+$item-number2:				4
+$delay-all:					2.5s
+$delay-item:				0.5s
+@for $i from 1 through $item-number2
+	.meteor--anim:nth-child(#{$i})
+		@include fadeIn($duration: 1.0s, $delay: $delay-all + ($delay-item * $i) - $delay-item, $iterations: 1)
+		opacity: 1
+		transition: opacity 0.5s ease
+
+
+$item-number3:				3
+$delay-all:					4.5s
+$delay-item:				0.5s
+@for $i from 1 through $item-number3
+	.advantages__item--anim:nth-child(#{$i})
+		@include fadeIn($duration: 1s, $delay: $delay-all + ($delay-item * $i) - $delay-item, $iterations: 1)
+		opacity: 1
+		transition: opacity 0.5s ease
+
+
+
+.title-field__wrap--anim
+	@include fadeInLeft($duration: 0.5s, $delay: 4.5s, $iterations: 1) 
+	opacity: 1
+	transition: opacity 1s ease
+
+
+
+
+
+
+.superhero-1--anim
+	@include fadeIn($duration: 0.5s, $delay: 6.0s, $iterations: 1) 
+	opacity: 1
+	transition: opacity 1s ease
+
+.superhero-1__wrap
+	animation: fly 5s infinite ease-in-out
+	animation-direction: alternate
+
+@keyframes fly
+	0%
+		transform: translate(0, 30px)
+	100%
+		transform: translate(0, -30px)
+
+
+
+
+
+
+
+
+.nums--anim
+	@include fadeIn($duration: 0.5s, $delay: 6.5s, $iterations: 1) 
+	opacity: 1
+	transition: opacity 1s ease
+
+
+.block-1__inner--anim
+	@include fadeInUp($duration: 1s, $delay: 7s, $iterations: 1) 
+	opacity: 1
+	transition: opacity 1s ease
+
+
+
+/*=============== End ANIMATIONS ===============*/

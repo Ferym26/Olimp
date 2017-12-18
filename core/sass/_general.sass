@@ -1,0 +1,167 @@
+// Стили, общие для всех секций
+
+.limit
+	max-width: 970px
+	margin: 0 auto
+
+
+
+
+.bg-items-place
+	position: relative
+	z-index: 50
+
+	.planet
+		position: absolute
+		z-index: -5
+
+		&--1
+			+planet(550, #d500ff)
+			top: 0
+			left: -355px
+
+		&--2
+			+planet(190, #00ffa8)
+			top: 0
+			right: -125px
+
+		&--3
+			+planet(360, #ff0055)
+			top: 292px
+			left: 620px
+
+		&--4
+			+planet(550, #d500ff)
+			top: 27px
+			right: -274px
+
+		&--5
+			+planet(360, #ff0055)
+			top: 95px
+			left: 0
+
+		&--6
+			+planet(360, #ff0055)
+			top: -96px
+			left: -344px
+
+		&--7
+			+planet(190, #00ffa8)
+			top: 98px
+			right: 116px
+
+
+	.meteor
+		position: absolute
+		z-index: -5
+
+		&--1
+			+meteor-cold
+			top: 0px
+			right: -25px
+
+		&--2
+			+meteor-hot
+			top: 203px
+			left: 593px
+
+		&--3
+			+meteor-cold
+			top: 486px
+			right: 42px
+
+		&--4
+			+meteor-hot
+			bottom: -192px
+			left: -252px
+
+		&--5
+			+meteor-hot
+			top: -18px
+			left: -34px
+
+		&--6
+			+meteor-cold
+			top: 77px
+			right: 282px
+
+		&--7
+			+meteor-hot
+			top: 67px
+			right: -176px
+
+		&--8
+			+meteor-cold
+			top: 12px
+			left: 162px
+
+	.num
+		position: absolute
+		z-index: -5
+
+		&--6
+			@extend .icon-land-num-6
+			top: 11px
+			right: 340px
+
+		&--4
+			@extend .icon-land-num-4
+			top: 101px
+			right: 42px
+
+		&--0
+			@extend .icon-land-num-0
+			top: 203px
+			right: 409px
+
+		&--7
+			@extend .icon-land-num-7
+			top: 320px
+			right: 39px
+
+		&--8
+			@extend .icon-land-num-8
+			top: 372px
+			right: 182px
+
+		&--9
+			@extend .icon-land-num-9
+			top: 420px
+			right: 557px
+
+		&--5
+			@extend .icon-land-num-5
+			top: 475px
+			right: 17px
+
+	.num-big
+		position: absolute
+
+		&--1
+			@extend .icon-land-num-1-big
+
+		&--4
+			@extend .icon-land-num-4-big
+			top: -55px
+			left: 519px
+
+		&--eq
+			@extend .icon-land-num-eq-big
+			top: 54px
+			right: -30px
+
+		&--5
+			@extend .icon-land-num-5-big
+			top: 172px
+			left: -45px
+
+		&--6
+			@extend .icon-land-num-6-big
+
+		&--7
+			@extend .icon-land-num-7-big
+			top: 355px
+			left: -128px
+
+		&--8
+			@extend .icon-land-num-8-big

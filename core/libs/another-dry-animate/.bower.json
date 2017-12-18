@@ -1,0 +1,27 @@
+{
+  "name": "another-dry-animate",
+  "homepage": "https://github.com/rosivanov/another-dry-animate",
+  "description": "another-dry-animate",
+  "main": "scss/_another-dry-animate.scss",
+  "moduleType": [],
+  "keywords": [
+    "Animate.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "150c336111",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "150c336111a9b803d485d3891516a145fd3612de"
+  },
+  "_source": "https://github.com/rosivanov/another-dry-animate.git",
+  "_target": "*",
+  "_originalSource": "another-dry-animate"
+}

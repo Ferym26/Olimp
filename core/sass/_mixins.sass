@@ -1,0 +1,125 @@
+
+// Simple pseudoelement
+=pseudo
+	content: ''
+	position: absolute
+	display: block
+
+
+//vertical center
+=center	
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+
+//horizontal center
+=wcenter	
+	left: 50%
+	transform: translate(-50%, 0)
+
+
+//horizontal center
+=hcenter	
+	top: 50%
+	transform: translate(0, -50%)
+
+
+//triangle
+=arr($width, $height, $bg, $direction)
+	width: 0px
+	height: 0px
+	border-style: solid
+	@if $direction == t
+		border-width: 0 $width / 2 + px $height + px $width / 2 + px
+		border-color: transparent transparent $bg transparent
+	@if $direction == r
+		border-width: $height / 2 + px 0 $height / 2 + px $width + px
+		border-color: transparent transparent transparent $bg
+	@if $direction == b
+		border-width: $height + px $width / 2 + px 0 $width / 2 + px
+		border-color: $bg transparent transparent transparent
+	@if $direction == l
+		border-width: $height / 2 + px $width + px $height / 2 + px 0
+		border-color: transparent $bg transparent transparent
+	@if $direction == tl
+		border-width: $height + px $width + px 0 0
+		border-color: $bg transparent transparent transparent
+	@if $direction == tr
+		border-width: 0 $width + px $height + px 0
+		border-color: transparent $bg transparent transparent
+	@if $direction == br
+		border-width: 0 0 $height + px $width + px
+		border-color: transparent transparent $bg transparent
+	@if $direction == bl
+		border-width: $height + px 0 0 $width + px
+		border-color: transparent transparent transparent $bg
+
+
+
+// Обрезание текста с 3 точиями
+=text-overflow
+	overflow: hidden
+	text-overflow: ellipsis
+	white-space: nowrap
+
+
+
+//Таблица на всю ширину
+=dt
+	display: table
+	width: 100%
+	table-layout: fixed
+
+
+
+//Скругление углов
+=circle
+	border-radius: 50%
+
+
+
+//Наклонная сетка градиент
+=bg-lines
+	background: linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%)
+	background-size: 4px 4px
+	background-color: #fff
+
+
+//Размер
+=size($width, $height)
+	width: $width
+	height: $height
+
+
+=planet($size, $bgc)
+	width: $size + px
+	height: $size + px
+	+circle
+	background-color: transparent
+	background-image: linear-gradient(45deg, transparent 40%, rgba($bgc, 0.1) 60%, rgba($bgc, 0.2) 70%, rgba($bgc, 0.5) 85%, $bgc 100%)
+
+
+=meteor-hot
+	width: 220px
+	height: 36px
+	border-top-left-radius: 18px
+	border-bottom-left-radius: 18px
+	transform: rotate(-45deg)
+	background-image: linear-gradient(90deg, #ffd400 0%, #ffd400 5%, #b30941 25%, #b30941 25%, rgba(#660566, 0.63) 50%, transparent 75%, transparent 100%)
+
+=meteor-cold
+	width: 220px
+	height: 34px
+	border-top-left-radius: 17px
+	border-bottom-left-radius: 17px
+	transform: rotate(-45deg)
+	background-image: linear-gradient(90deg, #b30941 0%, #b30941 5%, rgba(102, 5, 102, 0.67) 35%, rgba(72, 5, 102, 0) 75%, rgba(54, 5, 102, 0) 100%)
+
+
+=borders($tl, $tr, $bl, $br)
+	border-top-left-radius: $tl + px
+	border-top-right-radius: $tr + px
+	border-bottom-left-radius: $bl + px
+	border-bottom-right-radius: $br + px
+

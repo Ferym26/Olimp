@@ -1,0 +1,162 @@
+/*==================   BUTTONS   ==================*/
+
+
+		
+.butn
+	position: relative
+	display: inline-block	
+	
+	text-align: center	
+	font-weight: 700	
+	color: #fff	
+	text-decoration: none
+
+	border: none
+	outline: none
+	border-radius: 3px
+	
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+	cursor: pointer
+
+	transition: all 0.2s ease-in
+	z-index: 20
+
+	
+
+	//SIZE
+	&.butn--xl
+		min-width: 350px
+		height: 80px
+		font-size: 1.25rem //20px
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25)
+
+	&.butn--lg
+		min-width: 225px
+		height: 60px
+		font-size: 1rem //16px
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2)
+
+	&.butn--md
+		min-width: 140px
+		height: 50px
+		font-size: 0.8125rem //13px
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2)
+
+	&.butn--sm
+		min-width: 100px
+		height: 36px
+		font-size: 0.6875rem //11px
+
+
+
+	//BG-COLOR
+	&.butn--green
+		background-color: #21bf13
+		&:not([disabled])
+			&:hover
+				background-color: #1da611
+	
+	&.butn--blue
+		background-color: #0cb9f2
+		&:not([disabled])
+			&:hover
+				background-color: #0ba5d9
+	
+	&.butn--turq-green //Turquoise
+		background-color: #3eb39f 
+		&:not([disabled])
+			&:hover
+				background-color: #369988
+	
+	&.butn--turq-blue //Turquoise
+		color: #3e95b3
+		background-color: #fff
+		border: 2px solid #3e95b3
+		&:not([disabled])
+			&:hover
+				color: #fff
+				background-color: #3e95b3
+
+	&.butn--orange
+		background-color: #ffcc66
+		&:not([disabled])
+			&:hover
+				background-color: #ffb319
+
+	&.butn--red
+		color: #f26d6d
+		background-color: #fff
+		border: 2px solid #f26d6d
+		&:not([disabled])
+			&:hover
+				color: #fff
+				background-color: #f26d6d			
+
+	&[disabled]
+		opacity: 0.7
+		cursor: default
+
+
+
+	//SHAPE
+	&.butn--round
+		border-radius: 40px
+
+
+
+
+	
+
+
+	&.butn--login
+		min-width: 124px
+		height: 44px
+		line-height: 40px
+		font-size: 1rem //16px
+		color: #fefefe
+		background-color: $trp
+		border: 2px solid #ffffff
+		border-radius: 3px
+
+		&:not([disabled])
+			&:hover
+				text-decoration: none
+				background-color: rgba(#fff, 0.3)
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 575px)
+
+	.butn
+
+		&.butn--xl
+			min-width: 290px
+			height: 70px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================   /BUTTONS   ==================*/

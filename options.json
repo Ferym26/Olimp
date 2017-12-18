@@ -1,0 +1,17 @@
+{
+	"project": {
+		"type": "land",
+		"name": "Olimp",
+		"themeColor": "#000",
+		"date": "12.17"
+	},
+	"path": {
+		"baseDir": "app",
+		"sass": "sass",
+		"pug": "pug",
+		"css": "css",
+		"front": "frontend",
+		"core": "core"
+	},
+	"src": "['frontend/sass/*.{scss,sass}', 'core/sass/**/*.{scss,sass}']"
+}
