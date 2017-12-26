@@ -1,7 +1,9 @@
 # Olimp
 
 ###
- - [Сайт](http://quick-portfolio.webutu.com/Olimp/)
+ - [land](http://namneks.pe.hu/olimp/)
+ - [requests](http://namneks.pe.hu/olimp/requests.html)
+ - [profile](http://namneks.pe.hu/olimp/profile.html)
 
 ### Подготовка к запуску:
  - Установить [NodeJs](https://nodejs.org)
