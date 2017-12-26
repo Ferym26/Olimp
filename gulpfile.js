@@ -260,19 +260,19 @@ gulp.task('removedist', function () {
 gulp.task('deploy', function () {
 
 	var conn = ftp.create({
-		host: '',
-		user: '',
-		password: '',
+		host: 'files.000webhost.com',
+		user: 'ferym-forever',
+		password: 'q1w2e3r4t5',
 		parallel: 10,
 		log: gutil.log
 	});
 
 	var globs = [
-		'dist/**'
+		'app/**'
 	];
 
 	return gulp.src(globs, { buffer: false })
-		.pipe(conn.dest(op.project.date + "/" + op.project.name));
+		.pipe(conn.dest("/public_html/Olimp"));
 
 });
 

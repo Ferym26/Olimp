@@ -12,6 +12,8 @@
 	cursor: pointer
 	z-index: 100
 
+
+
 .popup
 	display: none
 	position: fixed
@@ -86,24 +88,125 @@
 	
 
 
-.link-blue
-	color: #0cb9f2
-	border-bottom: 1px dotted #0cb9f2
-	padding-bottom: 2px
-	&:hover
-		text-decoration: none
-		color: #0cb9f2
-		border: none
 
-.link-green
-	font-weight: 700
-	color: #3eb39f
-	border-bottom: 1px dotted #3eb39f
-	padding-bottom: 3px
-	&:hover
-		color: #3eb39f
-		text-decoration: none
-		border: none
+
+	&--request-edit
+		width: 600px
+
+		.butn-wrap
+			text-align: right
+
+
+	&--order
+		width: 600px
+
+		.order-table
+			font-size: $fz-medium
+			line-height: 24px
+
+			thead
+				font-weight: 700
+
+			td
+				vertical-align: top	
+
+			&__col
+				padding: 0 0 20px
+
+				&-1
+					width: 78px
+
+				&-2
+
+				&-3
+					width: 90px
+
+				&-4
+					width: 90px
+					text-align: right
+
+			&__body
+
+				.req-id
+
+				.req-name
+					padding-right: 20px
+
+				.req-num
+
+				.req-cost
+					text-align: right
+
+
+			&-result
+				margin: 30px 0 0
+
+				&__text
+					font-weight: 700
+					text-align: right
+
+					.num
+						display: inline-block
+						margin-left: 50px
+
+		.certificat
+			position: relative			
+
+			&:after, //боковинки
+			&:before
+				+pseudo
+				+size(28px, 47px)
+				+hcenter
+				border-radius: 12px
+				background-color: #f2f8fa
+
+
+			&:after
+				left: -14px
+
+			&:before
+				right: -14px
+
+
+			&__inner
+				padding: 15px 20px
+				border-radius: 12px
+				background-color: #e1eaed
+				text-align: center
+
+			&__descr
+				max-width: 430px
+				margin: 0 auto
+				font-size: $fz-medium
+
+			&__use
+				display: inline-block
+				margin: 10px 0 0
+				font-size: $fz-medium
+				font-weight: 700
+				color: #0cb9f2
+				border-bottom: 1px dotted #0cb9f2
+				cursor: pointer
+
+				&:hover
+					border: none
+
+		.butn-wrap
+			margin: 24px 0 0
+			text-align: right
+
+			.butn
+				&:first-child
+					margin-right: 24px
+
+
+
+	.validation-error
+		top: -20px
+
+
+
+
 
 
 
@@ -258,14 +361,55 @@
 					height: 22px
 
 
-
-
+	.droplist
+		&__item				
+			padding: 8px 130px 8px 23px
 
 
 	.superhero-3
 		position: absolute
 		top: 32px
 		right: -100px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link-blue
+	color: #0cb9f2
+	border-bottom: 1px dotted #0cb9f2
+	padding-bottom: 2px
+	&:hover
+		text-decoration: none
+		color: #0cb9f2
+		border: none
+
+.link-green
+	font-weight: 700
+	color: #3eb39f
+	border-bottom: 1px dotted #3eb39f
+	padding-bottom: 3px
+	&:hover
+		color: #3eb39f
+		text-decoration: none
+		border: none
+
+
+
+
+
+
 
 
 
@@ -336,6 +480,12 @@
 		top: 50px
 		transform: translate(-50%, 0)
 
+		&--order
+			width: 95%
+
+		&--request-edit
+			width: 500px
+
 	.popup-request
 
 		.cost
@@ -369,6 +519,28 @@
 	.popup
 		width: calc(100% - 20px)
 		max-width: 350px
+
+		&--order
+			width: 95%
+			max-width: initial
+
+			.order-table-wrap
+				overflow-x: scroll
+				padding: 0 0 15px
+
+			.order-table
+				width: 600px
+
+			.butn-wrap
+				display: flex
+				justify-content: space-around
+				text-align: center
+
+				.butn
+					&:first-child
+						margin-right: 5px
+
+
 
 
 	.popup-request

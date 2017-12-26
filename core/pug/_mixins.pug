@@ -51,3 +51,18 @@ mixin butn-b(position, text, newclass)
 			button.butn(class=newclass)
 				span.butn__text= text 
 
+
+
+
+
+
+mixin check(label, newclass)
+	-var defaultClassName = ""
+	-if(newclass === undefined)
+		- newclass = defaultClassName
+	-if(label === undefined)
+		- label = defaultClassName
+	label.custom-control.custom-checkbox(class= newclass)
+		input.custom-control-input(type='checkbox', autocomplete='off', true-value='accepted', false-value='not_accepted', value='accepted')
+		span.custom-control-indicator(aria-hidden='true')
+		span.custom-control-description= label

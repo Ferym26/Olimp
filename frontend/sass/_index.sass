@@ -4,132 +4,7 @@
 	padding: 0 0 240px
 	background-color: $color-land-bg
 
-	.main-header
-
-		&__inner
-			display: flex
-			height: 70px
-			justify-content: space-between
-			align-items: center
-			max-width: 1465px
-			margin: 0 auto
-
-
-		&__left
-
-		&__right
-
-			.user
-				position: relative
-				cursor: pointer
-				z-index: 20
-
-				&:hover
-					.user__menu
-						bottom: -204px
-						opacity: 1
-						visibility: visible
-					.user__name-text
-						border-bottom: 1px solid rgba(#fff, 0.25)
-
-				&__name
-					display: inline-block					
-
-					&-text
-						color: #fff
-						font-weight: 700
-
-				&__ava
-					display: inline-block
-					max-width: 44px
-					margin-left: 12px
-					cursor: pointer
-					&-img
-						+circle
-
-				&__menu
-					position: absolute
-					bottom: -250px
-					right: 0
-					padding: 10px 0
-					border-radius: 3px
-					background-color: #f2f8fa
-					z-index: 50
-					opacity: 0
-					visibility: hidden
-					transition: all 0.25s ease-in-out
-
-					&:after //arrow
-						+pseudo
-						+arr(12, 6, #f2f8fa, t)
-						top: -6px
-						right: 16px
-
-					&:before //bug fix
-						+pseudo
-						+size(100%, 30px)
-						top: -30px
-						left: 0
-						z-index: -5
-
-					&-item
-						position: relative
-						display: block
-						min-width: 225px
-						padding: 8.5px 50px 8.5px 23px
-
-						font-size: 0.8125rem //13px
-						color: #000
-
-						&:hover
-							text-decoration: none
-							background-color: #e6eff2
-							color: #000
-							font-weight: 700
-
-						&:not(:last-child)
-							margin: 0 0 10px
-
-						&.is-active
-							background-color: #e6eff2
-							color: #000
-							font-weight: 700
-
-						.menu-icon
-							position: absolute
-							+size(24px, 24px)
-							+hcenter
-							right: 23px
-							fill: $color-icon-fill
-
-
-		.logo
-			display: inline-block
-
-		&__menu
-			display: inline-block
-			margin-left: 45px
-
-			&-item
-				
-				transition: color 0.3s ease
-				background-color: $trp
-				cursor: pointer
-				padding: 0 0 3px
-				line-height: 1
-				color: #fefefe
-
-				&:hover					
-					border-bottom: 1px solid rgba(#fff, 0.25)
-				
-				&:not(:last-child)
-					margin-right: 46px
-
-				&:disabled
-					color: rgba(#fefefe, 0.35)
-					cursor: default
-					&:hover
-						border: none						
+						
 
 		
 
@@ -261,6 +136,19 @@
 			top: 56px
 			right: 164px
 			z-index: 100
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=============== END BLOCK-0 ===============*/
 
@@ -839,11 +727,7 @@
 
 /*=============== FOOTER ===============*/
 .main-footer	
-	overflow: hidden
-	background-color: $color-land-bg
-
-	.container
-		max-width: 1000px
+	overflow: hidden		
 
 	.butn-wrap
 		padding: 56px 0
@@ -853,15 +737,9 @@
 	&__meta
 		padding: 25px 0
 
-		.meta-title
-
-			&__text
-				color: rgba(#fff, 0.75)
-
 		.meta-links
 
-			&__link
-				color: rgba(#fff, 0.5)
+			&__link				
 				text-decoration: underline
 
 				&:hover
@@ -869,5 +747,49 @@
 
 				&:not(:last-child)
 					margin-right: 35px
+
+	&.is-narrow
+
+		.container
+			max-width: 1000px
+
+	
+
+	&.is-dark-bg
+		background-color: $color-land-bg
+
+		.main-footer			
+
+			&__meta
+
+				.meta-title
+
+					&__text
+						color: rgba(#fff, 0.75)
+
+				.meta-links
+
+					&__link
+						color: rgba(#fff, 0.5)
+	
+
+	&.is-light-bg
+
+		.main-footer
+
+			&__meta
+
+				.meta-title
+
+					&__text
+						color: #919799
+
+				.meta-links
+
+					&__link
+						color: #0cb9f2
+
+
+
 
 /*=============== END FOOTER ===============*/

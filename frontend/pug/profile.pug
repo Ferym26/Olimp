@@ -1,0 +1,151 @@
+extends ../../core/pug/_layout
+
+
+block content
+
+	//=============== block-0-1 ===============
+
+
+	include ../blocks/header/_header--dark
+
+
+	.block-0-1
+
+		.banner
+			img.banner__img(src="img/banner.jpg", alt="banner")
+
+	//=============== /block-0-1 ===============
+
+
+
+	//=============== profile ===============
+
+	.profile
+		.profile__inner
+			.container
+				.row
+					.col-xl-6.col-lg-7
+
+						.profile__info
+
+							.title
+								h2.title__text Мой профиль
+
+							.user-pic
+
+								h3.user-pic__title Моё фото
+
+								.user-pic__ava
+									img(src="img/ava-1.jpg", alt="user avatar")
+
+								.butn-wrap
+									button.butn.butn--sm.butn--green-trp Загрузить фото
+
+							.user-info
+
+								h3.user-info__title Информация обо мне
+
+								.email-block
+
+									.input-wrap
+										label.label(for="email1") Электронная почта
+										input.input.input--lg(type="text", id="email1", placeholder="nastya_informatichka@mail.com")
+										span.validation-error Пользователь не найден
+
+									.butn-wrap
+										button.butn.butn--sm.butn--green-trp Выслать ссылку
+
+								.input-wrap
+									label.label(for="name1") Фамилия
+									input.input.input--lg(type="text", id="name1", placeholder="Константинопольская")
+
+								.input-wrap
+									label.label(for="name2") Имя
+									input.input.input--lg(type="text", id="name2", placeholder="Анастасия")
+
+								.input-wrap
+									label.label(for="name3") Отчество
+									input.input.input--lg(type="text", id="name3", placeholder="Анастасия")
+
+								.input-wrap.input-wrap--w100p
+									label.label(for="post") Должность
+									input.input.input--lg(type="text", id="post", placeholder="Учитель информатики, математики и другой разной матики")
+
+								.input-wrap
+									label.label(for="work") Учреждение образования
+									input.input.input--lg(type="text", id="work", placeholder="Всеероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова")
+
+
+							.user-address
+
+								h3.user-address__title Адрес
+
+								.select-wrap
+									label.label(for="select") Страна
+									.select-box
+										.select-wrap
+											select.select.input--lg
+												option Россия
+												option Россия
+												option Россия
+										//- .droplist.droplist--up
+											ul
+												li.droplist__item Россия
+												li.droplist__item Россия
+												li.droplist__item Гандурас
+
+								.input-wrap
+									label.label(for="city") Город
+									input.input.input--lg(type="text", id="city", placeholder="Санкт-Петрбург")
+
+								.butn-wrap
+									button.butn.butn--lg.butn--turq-green Сохранить изменения
+
+
+					.col-xl-6.col-lg-5
+
+						.profile__banners
+
+							.profile__banners-inner
+
+								.profile__banner.profile__banner--1
+
+									img.profile__banner-img(src="http://via.placeholder.com/348x360?text=BANNER 1", alt="")
+
+								.profile__banner.profile__banner--2
+
+									img.profile__banner-img(src="http://via.placeholder.com/348x360?text=BANNER 2", alt="")
+
+								.profile__banner.profile__banner--3
+
+									img.profile__banner-img(src="http://via.placeholder.com/348x360?text=BANNER 3", alt="")
+
+						
+
+	//=============== /profile ===============
+
+
+
+
+	//=============== footer ===============
+	footer.main-footer.is-light-bg
+		.main-footer__meta
+			.container
+				.row
+					.col-md-3
+						.meta-title
+							p.meta-title__text.fz-medium &copy; 2017, Мир олимпиад
+						.meta-links
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Обратная связь
+
+					.col-md-9.organizer
+						.meta-title
+							p.meta-title__text.fz-medium Организатор ООО «КОМПЭДУ», УНН 790867878
+						.meta-links
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Пользовательское соглашение
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Политика конфиденциальности
+
+	//=============== /footer ===============
+
+
+	//- include ../blocks/popups/_popups

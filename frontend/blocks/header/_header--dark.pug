@@ -1,0 +1,35 @@
+header.main-header.main-header--dark
+	.container-fluid
+		.main-header__inner
+
+			.main-header__left
+
+				.logo
+					a(href="#" target="_blank" rel="noopener noreferrer")
+						img.logo__img(src="img/logo--dark.png", alt="logo")
+				
+				.main-header__menu
+					nav
+						button.main-header__menu-item(disabled="disabled") Олимпиады
+						button.main-header__menu-item Разработки
+
+			.main-header__right
+				//- .main-header__right-login
+					a.butn.butn--login.js_open_modal(href="#js_login" target="_blank" rel="noopener noreferrer") Войти
+				.main-header__right-user
+					.user
+						.user__name
+							p.user__name-text Анастасия
+						.user__ava
+							img.user__ava-img(src="img/ava-1.jpg", alt="avatar")
+
+						.user__menu
+							nav.user__menu-list
+								a.user__menu-item(href="#" target="_blank" rel="noopener noreferrer") Мои заявки
+									+svg("icon-menu-request", "menu-icon")
+								a.user__menu-item.is-active(href="#" target="_blank" rel="noopener noreferrer") Мой профиль
+									+svg("icon-menu-user", "menu-icon")
+								a.user__menu-item(href="#" target="_blank" rel="noopener noreferrer") Арихив
+									+svg("icon-menu-archive", "menu-icon")
+								a.user__menu-item(href="#" target="_blank" rel="noopener noreferrer") Выйти
+									+svg("icon-menu-exit", "menu-icon")

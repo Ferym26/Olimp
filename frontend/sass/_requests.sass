@@ -1,0 +1,805 @@
+/*=============== BLOCK-0-1 ===============*/
+
+.block-0-1
+	height: 480px
+	padding: 0 0 260px
+	background-color: $color-land-bg
+	overflow: hidden
+
+	.banner
+		position: relative
+
+		&__img
+			position: absolute
+			width: 1920px
+			max-width: initial
+			height: 480px
+			top: 0
+			+wcenter
+
+
+
+
+
+
+
+/*=============== END BLOCK-0-1 ===============*/
+
+
+
+
+
+/*=============== BLOCK-REQUESTS ===============*/
+
+.block-requests
+	padding: 0 0 150px
+
+	&__inner
+		position: relative
+		max-width: 1465px
+		margin: -265px auto 0
+		z-index: 100
+
+		&:after //bg
+			+pseudo
+			+size(100%, 100%)
+			top: 0
+			left: 0
+			background-color: #fff
+			z-index: -50
+		
+
+	&__wrap
+		padding: 24px 0 0
+		background-color: #fff
+		
+
+
+	.title
+		padding: 0 20px
+
+		&__text
+			margin: 0 0 24px
+			font-weight: 700
+
+		&__descr
+
+			&:not(:last-child)
+				margin: 0 0 24px
+
+
+
+	&__head
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 36px 0 19px
+		padding: 0 20px 15px
+		border-bottom: 1px solid #ebf0f2
+
+		&-left
+			display: flex
+
+		&-filter
+		
+			&--1
+				width: 225px
+				margin-left: 40px
+			&--2
+				width: 470px
+				margin-left: 20px
+
+
+
+
+	&__alert
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 9px 20px
+		border-radius: 3px
+		border: 2px solid #3eb39f
+		margin: 0 0 24px
+
+		&-col
+
+		&-icon
+			display: inline-block			
+
+			.check-ok-icon
+				+size(12px, 9px)
+				fill: #3eb39f
+
+		&-descr
+			display: inline-block			
+			margin-left: 30px
+
+			.text
+				font-weight: 700
+
+	&__items
+
+	&__item
+		position: relative
+		margin: 0 0 25px
+		padding: 27px 20px 0px //? 0/25
+		border-radius: 3px
+		background-color: #f2f8fa
+
+		&-head
+			position: relative
+			display: flex
+
+		&-check
+			width: 36px
+			padding-top: 3px
+
+		&-col-1
+			width: 400px
+			margin-left: 24px
+
+		&-col-2
+			width: 400px
+			margin-left: 45px
+
+		&-meta
+			font-size: $fz-medium
+			.meta-id
+				font-weight: 700
+			.meta-date
+				margin-left: 23px
+
+		&-title
+			margin: 2px 0 0
+			&__text
+				font-weight: 700
+
+		&-editor
+			margin: 58px 0 0
+
+			.editor-item
+				position: relative				
+				font-size: 0.6875rem //11px
+				color: #919799
+				border-bottom: 1px dotted #ccc
+				cursor: pointer
+
+				&:hover
+					border-bottom: 1px dotted #555
+
+					.editor-icon
+						fill: #555
+
+				.editor-icon
+					position: absolute
+					+size(10px, 10px)
+					+hcenter
+					left: -16px
+					fill: #c6cacc
+
+				&--edit						
+
+				&--cancel
+					margin-left: 40px
+
+
+		&-requisites
+			position: relative
+			margin-right: 10px
+			font-size: $fz-medium
+			line-height: 1.350rem //24px
+			overflow: hidden
+
+			&:after //hide text area
+				+pseudo
+				+size(90px, 100%)
+				top: 0
+				right: 0
+				background-image: linear-gradient(to right, $trp 0%, #f2f8fa 60%, #f2f8fa 100%)
+
+			.requisites-prof
+				color: #919799
+
+			.requisites-name
+				white-space: nowrap
+
+			.requisites-org
+				white-space: nowrap
+
+		&-participant
+			width: 135px
+			color: #919799
+
+			.participant-title
+
+				&__text
+					font-size: $fz-medium
+
+			.participant-num
+				margin: 3px 0 0
+				font-weight: 700
+				
+				.accent					
+					color: #000
+
+		&-price
+			width: 140px
+			text-align: center
+
+			.price-wrap
+
+			.old-price
+				font-size: $fz-medium
+				color: #919799
+				text-decoration: line-through
+
+			.new-price
+				margin: 3px 0 0
+				font-weight: 700
+
+			.butn-wrap
+				margin: 22px 0 0
+
+				.wasted
+					height: 50px
+					line-height: 50px
+					color: #c6cacc
+					font-size: $fz-medium
+					font-weight: 700
+
+			.verification-wrap
+				margin: 25px 0 0
+
+				.verification-text
+					color: #3e95b2
+					font-size: $fz-medium
+					font-weight: 700
+					line-height: 1.4
+
+
+			.report
+				margin: 8px 0 0
+				&__text
+					display: inline-block
+					font-size: $fz-spec
+					color: #919799
+					border-bottom: 1px dotted #ccc
+					cursor: pointer
+
+					&:hover
+						border-bottom: 1px dotted #555
+
+		.butn-show
+			position: absolute
+			+size(224px, 48px)
+			bottom: -15px
+			+wcenter			
+			border-radius: 5px 5px 0 0
+			background-color: #e1eaed
+
+			cursor: pointer
+			z-index: 10
+
+			&:hover
+				.butn-show__title
+					border-bottom: 1px dotted #555
+
+
+			&__title
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(calc(-50% - 11px), -50%)
+				margin-right: 22px
+				font-size: $fz-medium
+				font-weight: 700
+				border-bottom: 1px dotted #ccc
+				user-select: none				
+
+				.show-arrow
+					&.is-arrow-down
+						.icon-show-arrow
+							transform: rotate(180deg) translate(0, 2.5px)
+
+				.icon-show-arrow
+					position: absolute
+					right: -22px
+					+hcenter
+					+size(12px, 5px)
+					fill: #212426
+					transition: all 0.2s ease
+
+
+
+
+		&-body
+			position: relative
+			padding: 15px 0 0
+			z-index: 5
+
+			.participant-list
+				display: none
+				padding: 0 0 25px
+				&__inner
+					max-width: 1016px
+					margin: 0 auto
+					padding: 11px 0px 30px
+					background-color: #e1eaed
+
+				&.is-visible
+					display: block
+
+			.participant-table
+				width: 100%
+				table-layout: fixed
+				font-size: $fz-medium
+
+				tr
+					height: 48px
+
+				td
+					&:first-child
+						padding-left: 24px
+					&:last-child
+						padding-right: 24px
+
+				thead					
+					font-weight: 700
+
+				&__photo
+					width: 120px
+
+				&__fio
+
+				&__grade
+					width: 120px
+
+				&__score
+					width: 120px
+
+				&__answer
+					width: 120px
+
+				&__reward
+					width: 124px
+
+
+				tbody
+
+					tr
+						position: relative
+
+						&:hover
+							background-color: #dae3e6	
+
+
+
+
+					.photo__pic
+						+size(36px, 36px)
+						margin-top: 3px
+
+						&:hover
+							.ava-wrap
+								&:after
+									visibility: visible
+									opacity: 1
+									+size(36px, 36px)
+
+
+						.icon-ava
+							+size(36px, 36px)
+							fill: #c2c9cc
+							cursor: pointer
+							transition: fill 0.2s ease
+							&:hover
+								fill: #212426
+
+						.ava-wrap
+							position: relative
+							cursor: pointer
+							&:after
+								visibility: hidden
+								opacity: 0
+								+pseudo
+								+size(42px, 42px)
+								+center
+								+circle
+								border: 2px dashed #212426
+								transition: all 0.2s ease-in-out
+								z-index: 5
+
+						.ava-img
+							+size(36px, 36px)
+							+circle
+							
+
+
+					.fio-text
+						position: relative
+						display: inline-block
+						cursor: pointer
+						border-bottom: 1px dotted $trp
+
+						&:hover
+							border-bottom: 1px dotted #000
+							.fio-edit-icon
+								visibility: visible
+								opacity: 1
+								right: -15px
+
+						.fio-edit-icon
+							visibility: hidden
+							opacity: 0
+							position: absolute							
+							+size(10px, 10px)
+							+hcenter
+							right: 0
+							fill: #3e95b2
+							transition: all 0.2s ease-in-out
+
+					.grade-text
+
+					.score-text
+
+					.answer-text
+						display: inline-block
+						line-height: 1.4
+						border-bottom: 1px solid #878c8e
+						cursor: pointer
+						&:hover
+							font-weight: 700
+
+				.download-wrap
+					position: relative
+
+				.download-list
+					position: absolute
+					width: 240px
+					top: 100%
+					right: 0
+					z-index: 30
+					background-color: #fff
+					border-radius: 3px
+					box-shadow: 0 7px 7px rgba(0, 0, 0, 0.15)
+					padding: 10px 0
+					
+					&__item
+						padding: 8px 23px
+						font-size: $fz-medium
+						cursor: pointer
+						transition: all 0.1s ease-in-out
+
+						&:hover
+							font-weight: 700
+							background-color: #ebf0f2
+
+
+
+
+
+			.participant-add
+				margin: 15px 24px 0
+				text-align: center				
+				transition: all 0.2s ease-in-out				
+
+				&__outer
+					padding: 12px 5px
+					border-radius: 3px
+					border: 2px dashed #c6cacc
+					cursor: pointer
+					&:hover
+						background-color: #dae3e6
+
+				&__text
+					position: relative
+					display: inline-block
+					padding-left: 24px
+					font-size: $fz-medium
+					font-weight: 700
+					color: #919799
+
+					.icon-add
+						position: absolute
+						+size(12px, 12px)
+						+hcenter
+						left: 0
+
+						&:after //horiz line
+							+pseudo
+							+size(100%, 1px)
+							+center
+							background-color: #919799
+
+						&:before //vertic line
+							+pseudo
+							+size(1px, 100%)
+							+center
+							background-color: #919799
+
+				&__inner
+					display: flex
+					justify-content: space-between
+					align-items: center
+					padding: 5.75px 0
+
+					&--left
+
+					&--right
+
+					.input-name
+						display: inline-block
+						width: 350px
+						margin-left: 93px
+
+					.select-box
+						display: inline-block
+						width: 125px
+						margin-left: 30px
+
+					.cancel
+						margin-right: 25px
+						font-size: $fz-spec
+						color: #919799
+						border-bottom: 1px dotted #ccc
+						cursor: pointer
+
+						&:hover
+							border-bottom: 1px dotted #555
+
+
+			.participant-materials
+				margin: 22px 24px 0
+
+				&__title
+
+					&-text
+						
+
+				&__tiles
+					display: flex
+					flex: 0 0 200px
+					margin: 25px 0 0
+
+				.part-tile
+					position: relative
+
+					&__icon
+						position: absolute
+						width: 24px	
+						height: 30px						
+						top: 4px
+						left: 0
+
+					&__descr
+						padding-left: 35px
+
+						&:hover
+							.part-tile__descr-text
+								border: none
+
+						&-text
+							color: #000					
+							font-size: $fz-medium
+							line-height: 1							
+							border-bottom: 1px solid #878c8e						
+
+					.fingerprint-icon
+						fill: #f26d6d
+
+					.instruction-icon
+						fill: #3eb39f
+
+					.certificate-icon
+						fill: #3e95b3
+
+					.certificate-icon
+						fill: #3e95b3
+
+					a
+						text-decoration: none
+
+
+
+
+
+
+
+
+
+
+		//Новая заявка
+		&.is-new-request
+
+
+
+		//Оплаченная заявка
+		&.is-paid-request
+
+			.block-requests
+
+				&__item
+
+					&-price
+
+						.new-price
+							color: #c6cacc
+
+						.report
+
+							&__text
+								color: #c2c9cc
+								border: none
+								cursor: default
+
+								&:hover
+									color: #c2c9cc
+									border: none
+					
+					&-editor
+
+						.editor-item
+
+							&--cancel
+								color: #c2c9cc
+								border: none
+								cursor: default
+
+								&:hover
+									color: #c2c9cc
+									border: none
+
+									.editor-icon
+										fill: #c2c9cc
+
+
+
+
+		//Заявка на проверке
+		&.is-verification-request		
+
+
+
+		//Удаленная заявка
+		&.is-delete-request
+
+			.block-requests
+
+				&__item
+
+
+					&-meta
+
+						.meta-id
+							color: #919799
+
+						.meta-date
+							color: #919799
+
+					&-title
+
+						&__text
+							color: #919799
+
+					&-requisites
+
+						.requisites-name
+							color: #919799
+
+						.requisites-org
+							color: #919799
+
+					&-participant
+
+						.participant-num
+
+							.accent
+								color: #919799
+
+					&-price
+
+						.new-price
+							color: #919799
+
+						.report
+
+							&__text
+								color: #c2c9cc
+								border: none
+								cursor: default
+
+								&:hover
+									color: #c2c9cc
+									border: none
+					
+					&-editor
+
+						.editor-item
+
+							&--cancel,
+							&--edit
+								color: #c2c9cc
+								border: none
+								cursor: default
+
+								&:hover
+									color: #c2c9cc
+									border: none
+
+									.editor-icon
+										fill: #c2c9cc
+
+							
+			.butn-show
+				background-color: #f2f8fa				
+				cursor: default
+
+				&:hover					
+
+					.butn-show__title
+						border: none
+
+				&__title
+					color: #c2c9cc
+					border: none
+
+					.icon-show-arrow
+						fill: #e1eaed
+
+
+					
+							
+
+ 
+
+	
+
+
+
+
+
+
+	.add-request
+		margin: 25px 0 0
+		padding: 22px 0							
+		border-radius: 3px
+		border: 2px dashed #c6cacc
+		text-align: center				
+		transition: all 0.2s ease-in-out
+		cursor: pointer
+
+		&:hover
+			background-color: #f2f8fa
+
+		&__text
+			position: relative
+			display: inline-block
+			padding-left: 24px
+			
+			font-weight: 700
+			color: #919799
+
+			.icon-add
+				position: absolute
+				+size(12px, 12px)
+				+hcenter
+				left: 0
+
+				&:after //horiz line
+					+pseudo
+					+size(100%, 1px)
+					+center
+					background-color: #919799
+
+				&:before //vertic line
+					+pseudo
+					+size(1px, 100%)
+					+center
+					background-color: #919799
+
+
+
+
+
+
+/*=============== END BLOCK-REQUESTS ===============*/

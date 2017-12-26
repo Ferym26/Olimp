@@ -6,15 +6,7 @@
 .block-0
 	padding: 0 0 160px
 
-	.main-header
 
-		&__menu
-			margin-left: 30px
-
-			&-item
-
-				&:not(:last-child)
-					margin-right: 30px
 
 
 	.title-field
@@ -37,7 +29,16 @@
 
 	.nums
 		// display: none
+		
+.main-header
 
+	&__menu
+		margin-left: 30px
+
+		&-item
+
+			&:not(:last-child)
+				margin-right: 30px
 
 /*=============== END BLOCK-0 ===============*/
 
@@ -204,8 +205,234 @@
 
 
 
-/*=============== BLOCK-n ===============*/
-.block-n
 
 
-/*=============== END BLOCK-n ===============*/
+
+
+/*=============== REQUESTS ===============*/
+
+/*=============== BLOCK-0-1 ===============*/
+
+.block-0-1
+
+	display: none
+			
+
+
+
+/*=============== END BLOCK-0-1 ===============*/
+
+
+
+
+/*=============== BLOCK-REQUESTS ===============*/
+
+.block-requests
+	
+
+	&__inner
+		margin: 0 auto
+		border-top: 10px solid $color-land-bg
+		z-index: 10
+
+	.title
+
+		&__text
+			text-align: center
+
+	&__wrap
+
+	&__head
+		flex-direction: column
+		padding: 0 0 10px
+
+		&-left
+			justify-content: center
+			align-items: center
+
+			.custom-control-description
+
+			
+
+		&-right
+			padding: 10px 0 0
+			
+
+		&-filter
+
+			&--1
+
+			&--2
+	
+
+	&__item
+
+		&-head
+			position: relative
+			flex-direction: column
+
+		&-meta
+			margin: 12px 0 0 50px
+
+		&-title
+			margin: 20px 0 0
+			text-align: center
+
+		&-check
+			position: absolute
+			top: 0
+			left: 0
+
+		&-col	
+
+			&-1
+				width: 100%
+				margin-left: 0
+				
+	
+
+			&-2
+				width: 100%
+				margin: 15px 0 0
+
+
+		&-participant
+			width: 100%
+			margin: 15px 0 0
+			text-align: center
+
+
+
+		&-editor
+			position: absolute
+			top: 12px
+			right: 0
+			margin: 0
+			line-height: 1
+		
+
+		&-price
+			width: 100%
+			margin: 15px 0 50px
+			text-align: center
+
+
+		&-body
+
+			.participant
+
+				&-list
+					padding: 0
+
+					&__inner
+						padding: 10px 10px 20px
+						margin: 0 -20px 0
+
+				&-table
+
+					td
+						&:first-child,
+						&:last-child
+							padding: 0
+
+
+
+					&__photo
+						width: 60px
+
+					&__grade
+						width: 80px
+
+					&__score
+						width: 80px
+
+					&__answer
+						width: 90px
+
+					&__reward
+						width: 100px
+
+
+				&-add
+					margin: 15px 0 0
+
+					&__inner
+
+						.input-name
+							margin: 0
+							width: 300px
+
+
+				&-materials
+
+					&__title
+						text-align: center
+
+					&__tiles
+						display: flex
+						flex-wrap: wrap
+						justify-content: center
+
+						.part-tile
+							flex: 1 1 300px
+							margin: 0 0 20px
+
+							&__icon
+								top: 1px
+
+
+
+
+
+
+
+
+
+
+
+/*=============== END BLOCK-REQUESTS ===============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== PROFILE ===============*/
+
+.profile
+	
+	&__inner
+		margin: 0 auto
+		border-top: 10px solid $color-land-bg
+
+
+
+	&__banners
+		display: block
+		margin: 40px 0 0
+
+		&-inner
+			padding: 0
+			display: flex
+
+	&__banner
+
+		&:not(:last-child)
+			margin: 0 10px 0 0
+
+/*=============== END PROFILE ===============*/

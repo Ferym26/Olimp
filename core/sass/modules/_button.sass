@@ -4,12 +4,14 @@
 		
 .butn
 	position: relative
-	display: inline-block	
+	display: inline-block
 	
 	text-align: center	
 	font-weight: 700	
 	color: #fff	
 	text-decoration: none
+
+	padding: 0 20px
 
 	border: none
 	outline: none
@@ -74,7 +76,8 @@
 	
 	&.butn--turq-blue //Turquoise
 		color: #3e95b3
-		background-color: #fff
+		background-color: $trp
+		box-shadow: none
 		border: 2px solid #3e95b3
 		&:not([disabled])
 			&:hover
@@ -82,19 +85,33 @@
 				background-color: #3e95b3
 
 	&.butn--orange
+		color: #212426
 		background-color: #ffcc66
+		box-shadow: none
 		&:not([disabled])
 			&:hover
 				background-color: #ffb319
 
 	&.butn--red
 		color: #f26d6d
-		background-color: #fff
+		background-color: $trp
 		border: 2px solid #f26d6d
+		box-shadow: none
 		&:not([disabled])
 			&:hover
 				color: #fff
-				background-color: #f26d6d			
+				background-color: #f26d6d		
+
+	&.butn--green-trp
+		color: #3eb39f
+		background-color: $trp
+		border: 2px solid #3eb39f		
+		&:not([disabled])
+			&:hover
+				color: #fff
+				background-color: #3eb39f
+
+
 
 	&[disabled]
 		opacity: 0.7
@@ -107,25 +124,15 @@
 		border-radius: 40px
 
 
-
-
+	//CANCEL
+	&.butn--cancel
+		color: #919799
+		background-color: $trp
+		font-weight: 400
 	
 
 
-	&.butn--login
-		min-width: 124px
-		height: 44px
-		line-height: 40px
-		font-size: 1rem //16px
-		color: #fefefe
-		background-color: $trp
-		border: 2px solid #ffffff
-		border-radius: 3px
 
-		&:not([disabled])
-			&:hover
-				text-decoration: none
-				background-color: rgba(#fff, 0.3)
 
 
 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <title>Olimp</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+  <!--=============== Mobile Bar Color Theme ===============--><!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000"><!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000"><!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <!--=============== Mobile Bar Color Theme ===============-->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <body>
+    <div class="wrapper">
+      <!--=============== block-0-1 ===============-->
+      <header class="main-header main-header--dark">
+        <div class="container-fluid">
+          <div class="main-header__inner">
+            <div class="main-header__left">
+              <div class="logo"><a href="#" target="_blank" rel="noopener noreferrer"><img class="logo__img" src="img/logo--dark.png" alt="logo"></a></div>
+              <div class="main-header__menu">
+                <nav>
+                  <button class="main-header__menu-item" disabled="disabled">Олимпиады</button>
+                  <button class="main-header__menu-item">Разработки</button>
+                </nav>
+              </div>
+            </div>
+            <div class="main-header__right">
+              <div class="main-header__right-user">
+                <div class="user">
+                  <div class="user__name">
+                    <p class="user__name-text">Анастасия</p>
+                  </div>
+                  <div class="user__ava"><img class="user__ava-img" src="img/ava-1.jpg" alt="avatar"></div>
+                  <div class="user__menu">
+                    <nav class="user__menu-list"><a class="user__menu-item" href="#" target="_blank" rel="noopener noreferrer">Мои заявки
+                        <svg class="menu-icon">
+                          <use xlink:href="./img/sprite.svg#icon-menu-request"></use>
+                        </svg></a><a class="user__menu-item is-active" href="#" target="_blank" rel="noopener noreferrer">Мой профиль
+                        <svg class="menu-icon">
+                          <use xlink:href="./img/sprite.svg#icon-menu-user"></use>
+                        </svg></a><a class="user__menu-item" href="#" target="_blank" rel="noopener noreferrer">Арихив
+                        <svg class="menu-icon">
+                          <use xlink:href="./img/sprite.svg#icon-menu-archive"></use>
+                        </svg></a><a class="user__menu-item" href="#" target="_blank" rel="noopener noreferrer">Выйти
+                        <svg class="menu-icon">
+                          <use xlink:href="./img/sprite.svg#icon-menu-exit"></use>
+                        </svg></a></nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="block-0-1">
+        <div class="banner"><img class="banner__img" src="img/banner.jpg" alt="banner"></div>
+      </div>
+      <!--=============== /block-0-1 ===============-->
+      <!--=============== profile ===============-->
+      <div class="profile">
+        <div class="profile__inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7">
+                <div class="profile__info">
+                  <div class="title">
+                    <h2 class="title__text">Мой профиль</h2>
+                  </div>
+                  <div class="user-pic">
+                    <h3 class="user-pic__title">Моё фото</h3>
+                    <div class="user-pic__ava"><img src="img/ava-1.jpg" alt="user avatar"></div>
+                    <div class="butn-wrap">
+                      <button class="butn butn--sm butn--green-trp">Загрузить фото</button>
+                    </div>
+                  </div>
+                  <div class="user-info">
+                    <h3 class="user-info__title">Информация обо мне</h3>
+                    <div class="email-block">
+                      <div class="input-wrap">
+                        <label class="label" for="email1">Электронная почта</label>
+                        <input class="input input--lg" type="text" id="email1" placeholder="nastya_informatichka@mail.com"><span class="validation-error">Пользователь не найден</span>
+                      </div>
+                      <div class="butn-wrap">
+                        <button class="butn butn--sm butn--green-trp">Выслать ссылку</button>
+                      </div>
+                    </div>
+                    <div class="input-wrap">
+                      <label class="label" for="name1">Фамилия</label>
+                      <input class="input input--lg" type="text" id="name1" placeholder="Константинопольская">
+                    </div>
+                    <div class="input-wrap">
+                      <label class="label" for="name2">Имя</label>
+                      <input class="input input--lg" type="text" id="name2" placeholder="Анастасия">
+                    </div>
+                    <div class="input-wrap">
+                      <label class="label" for="name3">Отчество</label>
+                      <input class="input input--lg" type="text" id="name3" placeholder="Анастасия">
+                    </div>
+                    <div class="input-wrap input-wrap--w100p">
+                      <label class="label" for="post">Должность</label>
+                      <input class="input input--lg" type="text" id="post" placeholder="Учитель информатики, математики и другой разной матики">
+                    </div>
+                    <div class="input-wrap">
+                      <label class="label" for="work">Учреждение образования</label>
+                      <input class="input input--lg" type="text" id="work" placeholder="Всеероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова">
+                    </div>
+                  </div>
+                  <div class="user-address">
+                    <h3 class="user-address__title">Адрес</h3>
+                    <div class="select-wrap">
+                      <label class="label" for="select">Страна</label>
+                      <div class="select-box">
+                        <div class="select-wrap">
+                          <select class="select input--lg">
+                            <option>Россия</option>
+                            <option>Россия</option>
+                            <option>Россия</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-wrap">
+                      <label class="label" for="city">Город</label>
+                      <input class="input input--lg" type="text" id="city" placeholder="Санкт-Петрбург">
+                    </div>
+                    <div class="butn-wrap">
+                      <button class="butn butn--lg butn--turq-green">Сохранить изменения</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-5">
+                <div class="profile__banners">
+                  <div class="profile__banners-inner">
+                    <div class="profile__banner profile__banner--1"><img class="profile__banner-img" src="http://via.placeholder.com/348x360?text=BANNER 1" alt=""></div>
+                    <div class="profile__banner profile__banner--2"><img class="profile__banner-img" src="http://via.placeholder.com/348x360?text=BANNER 2" alt=""></div>
+                    <div class="profile__banner profile__banner--3"><img class="profile__banner-img" src="http://via.placeholder.com/348x360?text=BANNER 3" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=============== /profile ===============-->
+      <!--=============== footer ===============-->
+      <footer class="main-footer is-light-bg">
+        <div class="main-footer__meta">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="meta-title">
+                  <p class="meta-title__text fz-medium">&copy; 2017, Мир олимпиад</p>
+                </div>
+                <div class="meta-links"><a class="meta-links__link fz-spec" href="#" target="_blank" rel="noopener noreferrer">Обратная связь</a></div>
+              </div>
+              <div class="col-md-9 organizer">
+                <div class="meta-title">
+                  <p class="meta-title__text fz-medium">Организатор ООО «КОМПЭДУ», УНН 790867878</p>
+                </div>
+                <div class="meta-links"><a class="meta-links__link fz-spec" href="#" target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a><a class="meta-links__link fz-spec" href="#" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--=============== /footer ===============-->
+    </div>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

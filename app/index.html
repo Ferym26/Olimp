@@ -22,11 +22,11 @@
     <div class="wrapper">
       <!--=============== block-0 ===============-->
       <div class="block-0">
-        <header class="main-header">
+        <header class="main-header main-header--light">
           <div class="container-fluid">
             <div class="main-header__inner">
               <div class="main-header__left">
-                <div class="logo"><a href="#" target="_blank" rel="noopener noreferrer"><img class="logo__img" src="img/logo.png" alt="logo"></a></div>
+                <div class="logo"><a href="#" target="_blank" rel="noopener noreferrer"><img class="logo__img" src="img/logo--light.png" alt="logo"></a></div>
                 <div class="main-header__menu">
                   <nav>
                     <button class="main-header__menu-item" disabled="disabled">Олимпиады</button>
@@ -35,7 +35,29 @@
                 </div>
               </div>
               <div class="main-header__right">
-                <div class="main-header__right-login"><a class="butn butn--login js_open_modal" href="#js_login" target="_blank" rel="noopener noreferrer">Войти</a></div>
+                <div class="main-header__right-user">
+                  <div class="user">
+                    <div class="user__name">
+                      <p class="user__name-text">Анастасия</p>
+                    </div>
+                    <div class="user__ava"><img class="user__ava-img" src="img/ava-1.jpg" alt="avatar"></div>
+                    <div class="user__menu">
+                      <nav class="user__menu-list"><a class="user__menu-item" href="#" target="_blank" rel="noopener noreferrer">Мои заявки
+                          <svg class="menu-icon">
+                            <use xlink:href="./img/sprite.svg#icon-menu-request"></use>
+                          </svg></a><a class="user__menu-item is-active" href="#" target="_blank" rel="noopener noreferrer">Мой профиль
+                          <svg class="menu-icon">
+                            <use xlink:href="./img/sprite.svg#icon-menu-user"></use>
+                          </svg></a><a class="user__menu-item" href="#" target="_blank" rel="noopener noreferrer">Арихив
+                          <svg class="menu-icon">
+                            <use xlink:href="./img/sprite.svg#icon-menu-archive"></use>
+                          </svg></a><a class="user__menu-item" href="#" target="_blank" rel="noopener noreferrer">Выйти
+                          <svg class="menu-icon">
+                            <use xlink:href="./img/sprite.svg#icon-menu-exit"></use>
+                          </svg></a></nav>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -508,7 +530,7 @@
       </div>
       <!--=============== /block-7 ===============-->
       <!--=============== footer ===============-->
-      <footer class="main-footer">
+      <footer class="main-footer is-narrow is-dark-bg">
         <div class="container bg-items-place">
           <div class="row">
             <div class="col-lg">
@@ -845,7 +867,7 @@
                 <label class="label" for="select">Мероприятие</label>
                 <div class="select-box">
                   <div class="select-wrap">
-                    <select class="select input--lg" id="select">
+                    <select class="select input--lg">
                       <option>Международные олимпиады по математике «Мир математики» 1-11 классы</option>
                       <option>Международные олимпиады по математике «Мир математики» 1-11 классы</option>
                       <option>Международные олимпиады по математике «Мир математики» 1-11 классы</option>
@@ -951,9 +973,85 @@
           </div>
         </form>
       </div>
+      <!--POPUP REQUEST-EDIT-->
+      <div class="popup popup--request-edit">
+        <div class="popup__inner">
+          <div class="popup__head">
+            <h4 class="popup__head-text">Данные заявки <span>№7628507</span></h4>
+            <div class="popup__close js_popup_close"></div>
+          </div>
+          <div class="popup__body">
+            <div class="popup__form-item">
+              <label class="label" for="fio-1">ФИО учителя</label>
+              <input class="input input--lg" type="text" id="fio-1" placeholder="Name Name">
+            </div>
+            <div class="popup__form-item">
+              <label class="label" for="fio-2">Учреждение образования</label>
+              <input class="input input--lg" type="text" id="fio-2" placeholder="Всероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова">
+            </div>
+            <div class="butn-wrap">
+              <button class="butn butn--sm butn--cancel">Отменить</button>
+              <button class="butn butn--sm butn--turq-green">Войти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--POPUP ORDER-->
+      <div class="popup popup--order">
+        <div class="popup__inner">
+          <div class="popup__head">
+            <h4 class="popup__head-text">Заказ <span>№794634452</span></h4>
+            <div class="popup__close js_popup_close"></div>
+          </div>
+          <div class="popup__body">
+            <div class="order-table-wrap">
+              <table class="order-table">
+                <thead class="order-table__head">
+                  <tr>
+                    <td class="order-table__col order-table__col-1">Заявка</td>
+                    <td class="order-table__col order-table__col-2">Мероприятие</td>
+                    <td class="order-table__col order-table__col-3">Участники</td>
+                    <td class="order-table__col order-table__col-4">Стоимость</td>
+                  </tr>
+                </thead>
+                <tbody class="order-table__body">
+                  <tr>
+                    <td class="req-id">1687590</td>
+                    <td class="req-name">Международные олимпиады по математике «Мир математики» 1-11 классы</td>
+                    <td class="req-num">10</td>
+                    <td class="req-cost">700 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="req-id">1687590</td>
+                    <td class="req-name">Международные олимпиады по математике «Мир математики» 1-11 классы</td>
+                    <td class="req-num">10</td>
+                    <td class="req-cost">700 руб.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="order-table-result">
+              <p class="order-table-result__text">Итого <span class="num">1138 руб.</span></p>
+            </div>
+          </div>
+          <div class="popup__footer">
+            <div class="certificat">
+              <div class="certificat__inner">
+                <p class="certificat__descr">У вас есть неиспользованный сертификат <b>на 3-х бесплатных участников</b>! Доступно 2 из 3 участников.</p>
+                <p class="certificat__use">Использовать сертификат</p>
+              </div>
+            </div>
+            <div class="butn-wrap">
+              <button class="butn butn--md butn--turq-blue">По квитанции</button>
+              <button class="butn butn--md butn--turq-green">Оплатить онлайн</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--=============== /POP-UPs ===============-->
     </div>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

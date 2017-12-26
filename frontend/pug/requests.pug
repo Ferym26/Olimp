@@ -1,0 +1,948 @@
+extends ../../core/pug/_layout
+
+
+block content
+
+	//=============== block-0-1 ===============
+
+
+	include ../blocks/header/_header--dark
+
+
+	.block-0-1
+
+		.banner
+			img.banner__img(src="img/banner.jpg", alt="banner")
+
+	//=============== /block-0-1 ===============
+
+
+	//=============== block-requests ===============
+
+	.block-requests
+		.block-requests__inner
+			.container
+				.row
+					.col-lg
+						
+						.block-requests__wrap
+							
+
+							.title
+								h2.title__text Мои заявки
+								p.title__descr Все заявки с загруженными квитанциями находятся во вкладке «На проверке», все оплаченные заявки во вкладке «Оплаченные». Оплата по квитанции проходит в течение 1-5 банковских дней.
+
+
+							.block-requests__head
+
+								.block-requests__head-left
+
+									.block-requests__head-check
+										+check("Отметить новые заявки", "is-greenOk")
+
+									.block-requests__head-filter.block-requests__head-filter--1
+										.select-box
+											.select-wrap
+												select.select.input--md
+													option Все заявки
+													option Все заявки
+											//- .droplist.droplist--down
+												ul
+													li.droplist__item Все заявки
+													li.droplist__item Все заявки
+									
+									.block-requests__head-filter.block-requests__head-filter--2
+										.select-box
+											.select-wrap
+												select.select.input--md
+													option Международные олимпиады по математике «Мир математики» 1-11 классы
+													option Международные олимпиады по математике «Мир математики» 1-11 классы
+													option Международные олимпиады по математике «Мир математики» 1-11 классы
+											//- .droplist.droplist--down
+												ul
+													li.droplist__item Международные олимпиады по математике «Мир математики» 1-11 классы
+													li.droplist__item Международные олимпиады по математике «Мир математики» 1-11 классы
+													li.droplist__item Международные олимпиады по математике «Мир математики» 1-11 классы
+
+
+								.block-requests__head-right
+									button.butn.butn--md.butn--orange.butn--round Подать заявку
+
+
+
+							.block-requests__alert
+								.block-requests__alert-col.block-requests__alert-col--left
+									.block-requests__alert-icon
+										+svg("icon-check-ok", "check-ok-icon")
+									.block-requests__alert-descr
+										p.text Выбрана 1 заявка на сумму 700&nbsp;рублей.
+								.block-requests__alert-col.block-requests__alert-col--right
+									button.butn.butn--md.butn--turq-green Оплатить все
+
+							.block-requests__items
+
+								//====== Новая заявка
+								.block-requests__item.is-new-request
+									.block-requests__item-head
+										.block-requests__item-check
+											+check("", "is-greenOk")
+										.block-requests__item-col-1
+											.block-requests__item-meta
+												span.meta-id 1687590
+												span.meta-date 20.11.2017
+											.block-requests__item-title
+												p.block-requests__item-title__text Международные олимпиады по математике «Мир математики» 1-11 классы
+											.block-requests__item-editor
+												span.editor-item.editor-item--edit Редактировать данные
+													+svg("icon-edit", "editor-icon")
+												span.editor-item.editor-item--cancel Отменить заявку
+													+svg("icon-delete", "editor-icon")
+
+										.block-requests__item-col-2
+											.block-requests__item-requisites
+												p.requisites-prof Учитель и УО
+												p.requisites-name Константинопольская  Александра Константиновна
+												p.requisites-org Всероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова
+
+										.block-requests__item-participant
+											.participant-title
+												p.participant-title__text Участники
+											.participant-num
+												p.participant-num__text #[span.accent 18] из 18
+
+										.block-requests__item-price
+											.price-wrap
+												p.old-price 1 024 руб.
+												p.new-price 700 руб.
+											.butn-wrap
+												button.butn.butn--md.butn--blue Оплатить
+											.report
+												p.report__text Сообщить об оплате
+
+										.butn-show.js_butn-show
+											span.butn-show__title Участники
+												span.show-arrow
+													+svg("icon-ar-down", "icon-show-arrow")
+
+									.block-requests__item-body
+										
+										.participant-list
+											.participant-list__inner
+												.participant-table-box
+													table.participant-table
+														thead
+															tr
+																td.participant-table__photo Фото
+																td.participant-table__fio Фамилия и имя участника
+																td.participant-table__grade Класс
+																td.participant-table__score Баллы
+																td.participant-table__answer Ответы
+																td.participant-table__reward Награды
+
+														tbody
+															tr
+																td
+																	.photo__pic
+																		+svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 18] из 30
+																td
+																	p.answer-text Смотреть
+																td.download-wrap
+																	button.butn.butn--sm.butn--turq-blue Скачать
+																	.download-list
+																		ul
+																			li.download-list__item Диплом 1 степени
+																			li.download-list__item Благодарность родителям
+																			li.download-list__item Подарок 1
+																			li.download-list__item Подарок 2
+																			li.download-list__item Инструкции по распечатке
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+
+												.participant-add
+													.participant-add__outer
+														p.participant-add__text Добавить участника
+															span.icon-add
+													//- .participant-add__inner
+														.participant-add__inner--left
+															.input-name
+																input.input.input--md(type="text", placeholder="Name Name")
+															.select-box
+																.select-wrap
+																	select.select.input--md
+																		option 1 класс
+																		option 1 класс
+																		option 1 класс
+																//- .droplist.droplist--down
+																	ul
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+														.participant-add__inner--right
+															span.cancel Отменить
+															button.butn.butn--sm.butn--turq-green Добавить
+
+												.participant-materials
+													.participant-materials__title
+														h4.participant-materials__title-text Материалы для скачивания
+													.participant-materials__tiles
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-fingerprint", "part-tile__icon fingerprint-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Пароли для ввода ответов участниками
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-instruction", "part-tile__icon instruction-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Инструкция для оплаты по квитанции
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность организатору
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность учреждению образования
+								
+
+
+								//====== Новая заявка
+								.block-requests__item.is-new-request
+									.block-requests__item-head
+										.block-requests__item-check
+											+check
+										.block-requests__item-col-1
+											.block-requests__item-meta
+												span.meta-id 1687590
+												span.meta-date 20.11.2017
+											.block-requests__item-title
+												p.block-requests__item-title__text Международные олимпиады по математике «Мир математики» 1-11 классы
+											.block-requests__item-editor
+												span.editor-item.editor-item--edit Редактировать данные
+													+svg("icon-edit", "editor-icon")
+												span.editor-item.editor-item--cancel Отменить заявку
+													+svg("icon-delete", "editor-icon")
+
+										.block-requests__item-col-2
+											.block-requests__item-requisites
+												p.requisites-prof Учитель и УО
+												p.requisites-name Константинопольская  Александра Константиновна
+												p.requisites-org Всероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова
+
+										.block-requests__item-participant
+											.participant-title
+												p.participant-title__text Участники
+											.participant-num
+												p.participant-num__text #[span.accent 18] из 18
+
+										.block-requests__item-price
+											.price-wrap
+												p.old-price 1 024 руб.
+												p.new-price 700 руб.
+											.butn-wrap
+												button.butn.butn--md.butn--blue Оплатить
+											.report
+												p.report__text Сообщить об оплате
+
+										.butn-show.js_butn-show
+											span.butn-show__title Участники
+												span.show-arrow
+													+svg("icon-ar-down", "icon-show-arrow")
+
+									.block-requests__item-body
+										
+										.participant-list
+											.participant-list__inner
+												.participant-table-box
+
+													table.participant-table
+														thead
+															tr
+																td.participant-table__photo Фото
+																td.participant-table__fio Фамилия и имя участника
+																td.participant-table__grade Класс
+																td.participant-table__score Баллы
+																td.participant-table__answer Ответы
+																td.participant-table__reward Награды
+
+														tbody
+															tr
+																td
+																	.photo__pic
+																		+svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 18] из 30
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+
+												.participant-add
+													//- .participant-add__outer
+														p.participant-add__text Добавить участника
+															span.icon-add
+													.participant-add__inner
+														.participant-add__inner--left
+															.input-name
+																input.input.input--md(type="text", placeholder="Name Name")
+															.select-box
+																.select-wrap
+																	select.select.input--md
+																		option 1 класс
+																		option 1 класс
+																		option 1 класс
+																//- .droplist.droplist--down
+																	ul
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+														.participant-add__inner--right
+															span.cancel Отменить
+															button.butn.butn--sm.butn--turq-green Добавить
+
+												.participant-materials
+													.participant-materials__title
+														h4.participant-materials__title-text Материалы для скачивания
+													.participant-materials__tiles
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-fingerprint", "part-tile__icon fingerprint-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Пароли для ввода ответов участниками
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-instruction", "part-tile__icon instruction-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Инструкция для оплаты по квитанции
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность организатору
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность учреждению образования
+								
+
+
+								//====== Оплаченная заявка
+								.block-requests__item.is-paid-request
+									.block-requests__item-head
+										.block-requests__item-check
+											+check
+										.block-requests__item-col-1
+											.block-requests__item-meta
+												span.meta-id 1687590
+												span.meta-date 20.11.2017
+											.block-requests__item-title
+												p.block-requests__item-title__text Международные олимпиады по математике «Мир математики» 1-11 классы
+											.block-requests__item-editor
+												span.editor-item.editor-item--edit Редактировать данные
+													+svg("icon-edit", "editor-icon")
+												span.editor-item.editor-item--cancel Отменить заявку
+													+svg("icon-delete", "editor-icon")
+
+										.block-requests__item-col-2
+											.block-requests__item-requisites
+												p.requisites-prof Учитель и УО
+												p.requisites-name Константинопольская  Александра Константиновна
+												p.requisites-org Всероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова
+
+										.block-requests__item-participant
+											.participant-title
+												p.participant-title__text Участники
+											.participant-num
+												p.participant-num__text #[span.accent 18] из 18
+
+										.block-requests__item-price
+											.price-wrap
+												p.old-price 1 024 руб.
+												p.new-price 700 руб.
+											.butn-wrap
+												p.wasted Оплачено
+											.report
+												p.report__text Сообщить об оплате
+
+										.butn-show.js_butn-show
+											span.butn-show__title Участники
+												span.show-arrow
+													+svg("icon-ar-down", "icon-show-arrow")
+
+									.block-requests__item-body
+										
+										.participant-list
+											.participant-list__inner
+												.participant-table-box
+													table.participant-table
+														thead
+															tr
+																td.participant-table__photo Фото
+																td.participant-table__fio Фамилия и имя участника
+																td.participant-table__grade Класс
+																td.participant-table__score Баллы
+																td.participant-table__answer Ответы
+																td.participant-table__reward Награды
+
+														tbody
+															tr
+																td
+																	.photo__pic
+																		+svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 18] из 30
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+
+												.participant-add
+													//- .participant-add__outer
+														p.participant-add__text Добавить участника
+															span.icon-add
+													.participant-add__inner
+														.participant-add__inner--left
+															.input-name
+																input.input.input--md(type="text", placeholder="Name Name")
+															.select-box
+																.select-wrap
+																	select.select.input--md
+																		option 1 класс
+																		option 1 класс
+																		option 1 класс
+																//- .droplist.droplist--down
+																	ul
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+														.participant-add__inner--right
+															span.cancel Отменить
+															button.butn.butn--sm.butn--turq-green Добавить
+
+												.participant-materials
+													.participant-materials__title
+														h4.participant-materials__title-text Материалы для скачивания
+													.participant-materials__tiles
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-fingerprint", "part-tile__icon fingerprint-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Пароли для ввода ответов участниками
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-instruction", "part-tile__icon instruction-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Инструкция для оплаты по квитанции
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность организатору
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность учреждению образования
+								
+
+
+								//====== Заявка на проверке
+								.block-requests__item.is-verification-request
+									.block-requests__item-head
+										.block-requests__item-check
+											+check
+										.block-requests__item-col-1
+											.block-requests__item-meta
+												span.meta-id 1687590
+												span.meta-date 20.11.2017
+											.block-requests__item-title
+												p.block-requests__item-title__text Международные олимпиады по математике «Мир математики» 1-11 классы
+											.block-requests__item-editor
+												span.editor-item.editor-item--edit Редактировать данные
+													+svg("icon-edit", "editor-icon")
+												span.editor-item.editor-item--cancel Отменить заявку
+													+svg("icon-delete", "editor-icon")
+
+										.block-requests__item-col-2
+											.block-requests__item-requisites
+												p.requisites-prof Учитель и УО
+												p.requisites-name Константинопольская  Александра Константиновна
+												p.requisites-org Всероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова
+
+										.block-requests__item-participant
+											.participant-title
+												p.participant-title__text Участники
+											.participant-num
+												p.participant-num__text #[span.accent 18] из 18
+
+										.block-requests__item-price
+											.price-wrap
+												p.old-price 1 024 руб.
+												p.new-price 700 руб.
+											.verification-wrap
+												p.verification-text Идёт проверка оплаты...
+											.report
+												p.report__text Вернуть к оплате
+
+										.butn-show.js_butn-show
+											span.butn-show__title Участники
+												span.show-arrow
+													+svg("icon-ar-down", "icon-show-arrow")
+
+									.block-requests__item-body
+										
+										.participant-list
+											.participant-list__inner
+												.participant-table-box
+													table.participant-table
+														thead
+															tr
+																td.participant-table__photo Фото
+																td.participant-table__fio Фамилия и имя участника
+																td.participant-table__grade Класс
+																td.participant-table__score Баллы
+																td.participant-table__answer Ответы
+																td.participant-table__reward Награды
+
+														tbody
+															tr
+																td
+																	.photo__pic
+																		+svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 18] из 30
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+
+												.participant-add
+													//- .participant-add__outer
+														p.participant-add__text Добавить участника
+															span.icon-add
+													.participant-add__inner
+														.participant-add__inner--left
+															.input-name
+																input.input.input--md(type="text", placeholder="Name Name")
+															.select-box
+																.select-wrap
+																	select.select.input--md
+																		option 1 класс
+																		option 1 класс
+																		option 1 класс
+																//- .droplist.droplist--down
+																	ul
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+														.participant-add__inner--right
+															span.cancel Отменить
+															button.butn.butn--sm.butn--turq-green Добавить
+
+												.participant-materials
+													.participant-materials__title
+														h4.participant-materials__title-text Материалы для скачивания
+													.participant-materials__tiles
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-fingerprint", "part-tile__icon fingerprint-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Пароли для ввода ответов участниками
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-instruction", "part-tile__icon instruction-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Инструкция для оплаты по квитанции
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность организатору
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность учреждению образования
+								
+
+
+								//====== Удаленная заявка
+								.block-requests__item.is-delete-request
+									.block-requests__item-head
+										.block-requests__item-check
+											+check
+										.block-requests__item-col-1
+											.block-requests__item-meta
+												span.meta-id 1687590
+												span.meta-date 20.11.2017
+											.block-requests__item-title
+												p.block-requests__item-title__text Международные олимпиады по математике «Мир математики» 1-11 классы
+											.block-requests__item-editor
+												span.editor-item.editor-item--edit Редактировать данные
+													+svg("icon-edit", "editor-icon")
+												span.editor-item.editor-item--cancel Отменить заявку
+													+svg("icon-delete", "editor-icon")
+
+										.block-requests__item-col-2
+											.block-requests__item-requisites
+												p.requisites-prof Учитель и УО
+												p.requisites-name Константинопольская  Александра Константиновна
+												p.requisites-org Всероссийская творческая мастерская эстрадного искусства им. Л. С. Маслюкова
+
+										.block-requests__item-participant
+											.participant-title
+												p.participant-title__text Участники
+											.participant-num
+												p.participant-num__text #[span.accent 18] из 18
+
+										.block-requests__item-price
+											.price-wrap
+												p.old-price 1 024 руб.
+												p.new-price 700 руб.
+											.butn-wrap
+												button.butn.butn--md.butn--red Восстановить
+											.report
+												p.report__text Сообщить об оплате
+
+										.butn-show
+											span.butn-show__title Участники
+												span.show-arrow
+													+svg("icon-ar-down", "icon-show-arrow")
+
+									.block-requests__item-body
+										
+										.participant-list
+											.participant-list__inner
+												.participant-table-box
+													table.participant-table
+														thead
+															tr
+																td.participant-table__photo Фото
+																td.participant-table__fio Фамилия и имя участника
+																td.participant-table__grade Класс
+																td.participant-table__score Баллы
+																td.participant-table__answer Ответы
+																td.participant-table__reward Награды
+
+														tbody
+															tr
+																td
+																	.photo__pic
+																		+svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 18] из 30
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue Скачать
+															
+															tr
+																td
+																	.photo__pic
+																		.ava-wrap
+																			img.ava-img(src="img/req__ava-1.jpg", alt="avatar")
+																		//- +svg("icon-add-photo", "icon-ava")
+																td
+																	p.fio-text Name Name
+																		+svg("icon-edit", "fio-edit-icon")
+																td
+																	p.grade-text 11 класс
+																td
+																	p.score-text #[b 4] из 24
+																td
+																	p.answer-text Смотреть
+																td 
+																	button.butn.butn--sm.butn--turq-blue(disabled) Скачать
+
+												.participant-add
+													//- .participant-add__outer
+														p.participant-add__text Добавить участника
+															span.icon-add
+													.participant-add__inner
+														.participant-add__inner--left
+															.input-name
+																input.input.input--md(type="text", placeholder="Name Name")
+															.select-box
+																.select-wrap
+																	select.select.input--md
+																		option 1 класс
+																		option 1 класс
+																		option 1 класс
+																//- .droplist.droplist--down
+																	ul
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+																		li.droplist__item 1 класс
+														.participant-add__inner--right
+															span.cancel Отменить
+															button.butn.butn--sm.butn--turq-green Добавить
+
+												.participant-materials
+													.participant-materials__title
+														h4.participant-materials__title-text Материалы для скачивания
+													.participant-materials__tiles
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-fingerprint", "part-tile__icon fingerprint-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Пароли для ввода ответов участниками
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-instruction", "part-tile__icon instruction-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Инструкция для оплаты по квитанции
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность организатору
+														.part-tile
+															a(href="#" target="_blank" rel="noopener noreferrer")
+																.part-tile__icon
+																	+svg("icon-certificate", "part-tile__icon certificate-icon")
+																.part-tile__descr
+																	span.part-tile__descr-text Благодарность учреждению образования
+
+							
+
+							.add-request
+								p.add-request__text Подать заявку
+									span.icon-add
+
+
+
+
+	//=============== END block-requests ===============
+
+
+	//=============== footer ===============
+	footer.main-footer.is-light-bg
+		.main-footer__meta
+			.container
+				.row
+					.col-md-3
+						.meta-title
+							p.meta-title__text.fz-medium &copy; 2017, Мир олимпиад
+						.meta-links
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Обратная связь
+
+					.col-md-9.organizer
+						.meta-title
+							p.meta-title__text.fz-medium Организатор ООО «КОМПЭДУ», УНН 790867878
+						.meta-links
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Пользовательское соглашение
+							a.meta-links__link.fz-spec(href="#" target="_blank" rel="noopener noreferrer") Политика конфиденциальности
+
+	//=============== /footer ===============
+
+
+	include ../blocks/popups/_popups

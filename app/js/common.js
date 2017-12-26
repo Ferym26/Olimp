@@ -1,6 +1,9 @@
 
 $(document).ready(function() {
 
+	//фикс svg спрайта для ИЕ
+	svg4everybody();
+
 	//Анимации
 	//Animate.scss + WayPoints JS plugin with settings in sass
 	$.fn.animated = function(animName, offset) {
@@ -38,7 +41,7 @@ $(document).ready(function() {
 
 	
 
-	//Jquery
+	//модалки
 	var overlay = $('#js_overlay');
 	var open_modal = $('.js_open_modal');
 	var close = $('.js_popup_close, #js_overlay');
@@ -67,6 +70,16 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+	//requests page, butn "участники"
+
+	$(".js_butn-show").on("click", function() {
+		$(this).parent().next().find(".participant-list").slideToggle(300);
+		$(".show-arrow", this).toggleClass("is-arrow-down");
+	});
 
 
 
